@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 0 0 0;
+    --color-secondary: 255 255 255;
+    --color-muted: 0, 0, 0;
+    --color-warriors-royal-blue: 29, 66, 138;
+    --color-warriors-california-golden-yellow: 255, 199, 44;
+    --color-valkyries-violet: 184, 150, 212;
+    --color-chasecenter-core-blue: 1, 121, 193;
+  }
+}

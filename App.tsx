@@ -1,20 +1,68 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import "./src/styles/global.css";
 
-export default function App() {
+import React from "react";
+import { useEffect, useState } from "react";
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { User, onAuthStateChanged } from "firebase/auth";
+import { firebase_auth } from "./src/config/firebase";
+
+import { Auth, Home, Components, Roster } from './src/screens/Screens';
+
+type RootStackParamList = {
+  Home: undefined;
+  Auth: undefined;
+  Components: undefined;
+  Roster: undefined;
+};
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
+
+const App = () => {
+  const [user, setUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    onAuthStateChanged(firebase_auth, (user) => {
+      setUser(user);
+    });
+  }, []);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    <NavigationContainer>
+      <Stack.Navigator>
+        {user ? (
+          <React.Fragment>
+            <Stack.Screen
+              name="Home"
+              component={Home}
+              options={{ title: 'Baseline Mobile', headerShown: true }}
+            />
+            <Stack.Screen
+              name="Components"
+              component={Components}
+              options={{ title: 'Components', headerShown: true }}
+            />
+            <Stack.Screen
+              name="Roster"
+              component={Roster}
+              options={{ title: 'Roster', headerShown: true }}
+            />
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <Stack.Screen
+              name="Auth"
+              component={Auth}
+              options={{ title: 'Log In / Sign Up', headerShown: false }}
+            />
+          </React.Fragment>
+        )}
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
