@@ -10,8 +10,10 @@ import { User, onAuthStateChanged } from "firebase/auth";
 import { firebase_auth } from "./src/config/firebase";
 
 import { Auth, Home, Components, Roster } from './src/screens/Screens';
+import { BottomTab } from './src/components/Components';
 
 type RootStackParamList = {
+  BottomTabs: undefined;
   Home: undefined;
   Auth: undefined;
   Components: undefined;
@@ -35,6 +37,11 @@ const App = () => {
       <Stack.Navigator>
         {user ? (
           <React.Fragment>
+            <Stack.Screen
+              name="BottomTabs"
+              component={BottomTab}
+              options={{headerShown: false}}
+            />
             <Stack.Screen
               name="Home"
               component={Home}
