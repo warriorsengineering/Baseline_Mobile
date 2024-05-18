@@ -21,7 +21,7 @@ const Shop = () => {
             <TabSwitcher
               selectedTab={selectedTab}
               setSelectedTab={setSelectedTab}
-              tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'W Team', href: '#', current: false }]} />
+              tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'Valkyries', href: '#', current: false }]} />
           </View>
 
           {/* Shop Items */}
@@ -30,7 +30,7 @@ const Shop = () => {
               <>   
               </>
             )}
-            {selectedTab === 'W Team' && (
+            {selectedTab === 'Valkyries' && (
               <>
               </>
             )}

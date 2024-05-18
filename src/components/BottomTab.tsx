@@ -16,10 +16,10 @@ const BottomTab = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarActiveTintColor: 'black',
-        tabBarInactiveTintColor: 'gray',
+        tabBarActiveTintColor: '#000000',
+        tabBarInactiveTintColor: '#808080',
         tabBarStyle: {
-          backgroundColor: 'white',
+          backgroundColor: '#FFFFFF',
         },
       }}>
       <Tab.Screen
@@ -29,7 +29,7 @@ const BottomTab = () => {
           headerShown: true,
           title: 'Home',
           tabBarIcon: ({focused, color, size}) => (
-            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-black' : ''}`}>
+            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
               <FontAwesomeIcon icon={focused ? faHome : faHome} size={size} color={color} />
             </View>
           ),
@@ -42,7 +42,7 @@ const BottomTab = () => {
           headerShown: true,
           title: 'Team',
           tabBarIcon: ({focused, color, size}) => (
-            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-black' : ''}`}>
+            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
               <FontAwesomeIcon icon={focused ? faBasketball : faBasketball} size={size} color={color} />
             </View>
           ),
@@ -55,7 +55,7 @@ const BottomTab = () => {
           headerShown: true,
           title: 'My Tickets',
           tabBarIcon: ({focused, color, size}) => (
-            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-black' : ''}`}>
+            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
               <FontAwesomeIcon icon={focused ? faTicketSimple : faTicketSimple} size={size} color={color} />
             </View>
           ),
@@ -68,7 +68,7 @@ const BottomTab = () => {
           headerShown: true,
           title: 'Events',
           tabBarIcon: ({focused, color, size}) => (
-            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-black' : ''}`}>
+            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
               <FontAwesomeIcon icon={focused ? faCalendarDays : faCalendarDays}  size={size} color={color} />
             </View>
           ),
@@ -81,7 +81,7 @@ const BottomTab = () => {
           headerShown: true,
           title: 'Components',
           tabBarIcon: ({focused, color, size}) => (
-            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-black' : ''}`}>
+            <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
               <FontAwesomeIcon icon={focused ? faVial : faVial} size={size} color={color} />
             </View>
           ),

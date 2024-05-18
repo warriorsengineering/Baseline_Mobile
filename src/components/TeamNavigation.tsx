@@ -13,8 +13,8 @@ const TeamNavigation = () => {
   <Tab.Navigator
     screenOptions={{
       tabBarLabelStyle: {fontSize: 12, textTransform: 'none'},
-      tabBarItemStyle: {width: 90},
-      tabBarStyle: {backgroundColor: '#fff'},
+      tabBarItemStyle: {width: 100},
+      tabBarStyle: {backgroundColor: '#FFFFFF'},
       tabBarIndicatorStyle: {backgroundColor: 'transparent'},
       tabBarScrollEnabled: true,
     }}
@@ -24,8 +24,9 @@ const TeamNavigation = () => {
       component={Schedule}
       options={{
         tabBarLabel: ({focused}) => (
-          <Text className={`font-${focused ? 'bold' : 'normal'}`}>Schedule</Text>
+          <Text style={{paddingHorizontal: 5}} className={`font-${focused ? 'bold' : 'normal'}`}>Schedule</Text>
         ),
+        tabBarItemStyle: {width: 'auto'},
       }}
     />
     <Tab.Screen
@@ -33,8 +34,9 @@ const TeamNavigation = () => {
       component={Roster}
       options={{
         tabBarLabel: ({focused}) => (
-          <Text className={`font-${focused ? 'bold' : 'normal'}`}>Roster</Text>
+          <Text style={{paddingHorizontal: 5}} className={`font-${focused ? 'bold' : 'normal'}`}>Roster</Text>
         ),
+        tabBarItemStyle: {width: 'auto'},
       }}
     />
     <Tab.Screen
@@ -42,8 +44,9 @@ const TeamNavigation = () => {
       component={Stats}
       options={{
         tabBarLabel: ({focused}) => (
-          <Text className={`font-${focused ? 'bold' : 'normal'}`}>Stats</Text>
+          <Text style={{paddingHorizontal: 5}} className={`font-${focused ? 'bold' : 'normal'}`}>Stats</Text>
         ),
+        tabBarItemStyle: {width: 'auto'},
       }}
     />
     <Tab.Screen
@@ -51,8 +54,9 @@ const TeamNavigation = () => {
       component={Standings}
       options={{
         tabBarLabel: ({focused}) => (
-          <Text className={`font-${focused ? 'bold' : 'normal'}`}>Standings</Text>
+          <Text style={{paddingHorizontal: 5}} className={`font-${focused ? 'bold' : 'normal'}`}>Standings</Text>
         ),
+        tabBarItemStyle: {width: 'auto'},
       }}
     />
     <Tab.Screen
@@ -60,8 +64,9 @@ const TeamNavigation = () => {
       component={Shop}
       options={{
         tabBarLabel: ({focused}) => (
-          <Text className={`font-${focused ? 'bold' : 'normal'}`}>Shop</Text>
+          <Text style={{paddingHorizontal: 5}} className={`font-${focused ? 'bold' : 'normal'}`}>Shop</Text>
         ),
+        tabBarItemStyle: {width: 'auto'},
       }}
     />
   </Tab.Navigator>

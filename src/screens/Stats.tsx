@@ -21,7 +21,7 @@ const Stats = () => {
             <TabSwitcher
               selectedTab={selectedTab}
               setSelectedTab={setSelectedTab}
-              tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'W Team', href: '#', current: false }]} />
+              tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'Valkyries', href: '#', current: false }]} />
           </View>
 
           {/* Player Card */}
@@ -29,7 +29,7 @@ const Stats = () => {
             {selectedTab === 'Warriors' && (
               <></>
             )}
-            {selectedTab === 'W Team' && (
+            {selectedTab === 'Valkyries' && (
               <></>
             )}
           </View>

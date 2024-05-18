@@ -23,7 +23,7 @@ const Schedule = () => {
               setSelectedTab={setSelectedTab}
               tabData={[
                 {name: 'Warriors', href: '#', current: true},
-                {name: 'W Team', href: '#', current: false},
+                {name: 'Valkyries', href: '#', current: false},
               ]}
             />
           </View>
@@ -34,7 +34,7 @@ const Schedule = () => {
               <>
               </>
             )}
-            {selectedTab === 'W Team' && (
+            {selectedTab === 'Valkyries' && (
               <>
               </>
             )}
