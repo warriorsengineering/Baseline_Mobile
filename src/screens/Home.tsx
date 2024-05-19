@@ -37,13 +37,6 @@ const Home = () => {
             >
               <Text className='text-secondary text-lg font-bold text-center'>Source Code</Text>
             </TouchableOpacity>
-            <TouchableOpacity
-              className='bg-primary p-5 mt-3 rounded-md'
-              accessibilityLabel='View Roster Screens'
-              onPress={() => navigation.navigate('Roster')}
-            >
-              <Text className='text-secondary text-lg font-bold text-center'>Roster</Text>
-            </TouchableOpacity>
           </View>
         </View>
       </ScrollView>
