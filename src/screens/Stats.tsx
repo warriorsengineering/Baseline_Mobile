@@ -24,7 +24,7 @@ const Stats = () => {
               tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'Valkyries', href: '#', current: false }]} />
           </View>
 
-          {/* Player Card */}
+          {/* Stats*/}
           <View className='mt-3' key={selectedTab}>
             {selectedTab === 'Warriors' && (
               <></>

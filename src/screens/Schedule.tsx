@@ -28,8 +28,8 @@ const Schedule = () => {
             />
           </View>
 
-          {/* Game Preview Card */}
-          <View className='mt-3 mb-3' key={selectedTab}>
+          {/* Schedule */}
+          <View className="mt-3" key={selectedTab}>
             {selectedTab === 'Warriors' && (
               <>
               <GameCard
