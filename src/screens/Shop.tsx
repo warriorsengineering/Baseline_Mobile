@@ -24,10 +24,10 @@ const Shop = () => {
               tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'Valkyries', href: '#', current: false }]} />
           </View>
 
-          {/* Shop Items */}
+          {/* Shop */}
           <View className='mt-3' key={selectedTab}>
             {selectedTab === 'Warriors' && (
-              <>   
+              <>
               </>
             )}
             {selectedTab === 'Valkyries' && (

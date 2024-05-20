@@ -1,10 +1,9 @@
-// Standings Screen
+// Upcoming Events
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { TabSwitcher } from '../components/Components';
 
-const Standings = () => {
+const UpcomingEvents = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const backgroundStyle = 'bg-white dark:bg-black';
   const [selectedTab, setSelectedTab] = useState('Warriors');
@@ -13,24 +12,19 @@ const Standings = () => {
     <SafeAreaView className={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <ScrollView
-        contentInsetAdjustmentBehavior='automatic'
+        contentInsetAdjustmentBehavior="automatic"
         className={backgroundStyle}>
-        <View className='flex-1 px-4'>
-          {/* Tab  Switcher */}
-          <View className='mt-5'>
-            <TabSwitcher
-              selectedTab={selectedTab}
-              setSelectedTab={setSelectedTab}
-              tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'Valkyries', href: '#', current: false }]} />
-          </View>
+        <View className="flex-1 px-4">
 
-          {/* Standings */}
-          <View className='mt-3' key={selectedTab}>
+          {/* Upcoming Events */}
+          <View className="mt-3" key={selectedTab}>
             {selectedTab === 'Warriors' && (
-              <></>
+              <>
+              </>
             )}
             {selectedTab === 'Valkyries' && (
-              <></>
+              <>
+              </>
             )}
           </View>
         </View>
@@ -39,4 +33,4 @@ const Standings = () => {
   );
 };
 
-export default Standings;
+export default UpcomingEvents;
