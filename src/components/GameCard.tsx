@@ -9,18 +9,15 @@ interface GameCardProps {
      broadcast: string;
      gameLocation: string;
      gameTime: string;
+     gsInitial: string;
+     gsLogo: ImageSourcePropType;
+     gsRecord: string;
      opponentInitial: string;
      opponentLogo: ImageSourcePropType;
      opponentRecord: string;
-     valkyriesInitial: string;
-     valkyriesLogo: ImageSourcePropType;
-     valkyriesRecord: string;
-     warriorsInitial: string;
-     warriorsLogo: ImageSourcePropType;
-     warriorsRecord: string;
 }
 
-const GameCard = ({ broadcast, gameLocation, gameTime, opponentInitial, opponentLogo, opponentRecord, valkyriesInitial, valkyriesLogo, valkyriesRecord, warriorsInitial, warriorsLogo, warriorsRecord }: GameCardProps) => {
+const GameCard = ({ broadcast, gameLocation, gameTime, gsInitial, gsLogo, gsRecord, opponentInitial, opponentLogo, opponentRecord }: GameCardProps) => {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
   return (
     <View className='flex bg-secondary shadow-md rounded-md py-8 px-5'>
@@ -30,13 +27,13 @@ const GameCard = ({ broadcast, gameLocation, gameTime, opponentInitial, opponent
       <View className='flex-row justify-between mb-5'>
         <View className='flex-col items-center'>
           <Image
-            source={warriorsLogo || valkyriesLogo}
+            source={gsLogo}
             className='w-12 h-12'
           />
-          <Text className='text-muted text-md mt-3'>{warriorsRecord || valkyriesRecord}</Text>
+          <Text className='text-muted text-md mt-3'>{gsRecord}</Text>
         </View>
         <View className='flex-col mt-1'>
-          <Text className='text-primary font-bold text-4xl'>{warriorsInitial || valkyriesInitial}</Text>
+          <Text className='text-primary font-bold text-4xl'>{gsInitial}</Text>
         </View>
         <View className='flex-col mt-3 items-center'>
           <Text className='text-primary font-semibold text-sm'>{gameLocation}</Text>
