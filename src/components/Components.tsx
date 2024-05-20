@@ -4,6 +4,7 @@ import BottomTab from './BottomTab';
 import Card from './Card';
 import ContentBlock from './ContentBlock';
 import EventsNavigation from './EventsNavigation';
+import GameCard from './GameCard';
 import Hero from './Hero';
 import IconBlock from './IconBlock';
 import LogoCloud from './LogoCloud';
@@ -13,4 +14,4 @@ import TabSwitcher from './TabSwitcher';
 import TeamNavigation from './TeamNavigation';
 import Testimonial from './Testimonial';
 
-export { BottomTab, Card, ContentBlock, EventsNavigation, Hero, IconBlock, LogoCloud, PlayerCard, Scoreboard, TabSwitcher, TeamNavigation, Testimonial };
+export { BottomTab, Card, ContentBlock, EventsNavigation, GameCard, Hero, IconBlock, LogoCloud, PlayerCard, Scoreboard, TabSwitcher, TeamNavigation, Testimonial };
