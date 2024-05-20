@@ -15,9 +15,9 @@ const Schedule = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         className={backgroundStyle}>
-        <View className="flex-1 px-4">
+        <View className='flex-1 px-4'>
           {/* Tab  Switcher */}
-          <View className="mt-5">
+          <View className='mt-5'>
             <TabSwitcher
               selectedTab={selectedTab}
               setSelectedTab={setSelectedTab}
@@ -29,33 +29,35 @@ const Schedule = () => {
           </View>
 
           {/* Game Preview Card */}
-          <View className="mt-3 mb-3" key={selectedTab}>
+          <View className='mt-3 mb-3' key={selectedTab}>
             {selectedTab === 'Warriors' && (
               <>
               <GameCard
                   broadcast={'NBC Sports'}
                   gameLocation={'vs'}
                   gameTime={'Sun, Feb 25 at 7:00 PM'}
+                  gsInitial={'GSW'}
+                  gsLogo={require('../assets/images/warriors-logo.png')}
+                  gsRecord={'65-0'}
                   opponentInitial={'DEN'}
                   opponentLogo={require('../assets/images/nuggets-logo.png')}
                   opponentRecord={'45-22'}
-                  warriorsInitial={'GSW'}
-                  warriorsLogo={require('../assets/images/warriors-logo.png')}
-                  warriorsRecord={'65-0'} valkyriesInitial={''} valkyriesLogo={0} valkyriesRecord={''}              />
+              />
               </>
             )}
             {selectedTab === 'Valkyries' && (
               <>
-            <GameCard
-                  gameTime={'Mon, Jun 24 at 4:30 PM'}
+              <GameCard
+                  broadcast={'NBC Sports'}
                   gameLocation={'@'}
-                  valkyriesLogo={require('../assets/images/valkyries-logo.png')}
-                  valkyriesInitial={'GSV'}
+                  gameTime={'Mon, Jun 24 at 4:30 PM'}
+                  gsInitial={'GSV'}
+                  gsLogo={require('../assets/images/valkyries-logo.png')}
+                  gsRecord={'10-4'}
                   opponentInitial={'LVA'}
-                  valkyriesRecord={'0-0'}
-                  opponentRecord={'0-0'}
                   opponentLogo={require('../assets/images/aces-logo.png')}
-                  broadcast={'NBC Sports'} warriorsInitial={''} warriorsLogo={0} warriorsRecord={''}            />
+                  opponentRecord={'7-7'}
+              />
               </>
             )}
           </View>
