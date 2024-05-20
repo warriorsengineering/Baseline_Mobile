@@ -14,7 +14,7 @@ const FeaturedEvents = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         className={backgroundStyle}>
-        <View className="flex-1 px-0">
+        <View className="flex-1 px-4">
 
           {/* Featured Events */}
           <View className="mt-3" key={selectedTab}>
