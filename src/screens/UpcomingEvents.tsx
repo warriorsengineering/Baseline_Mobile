@@ -1,4 +1,4 @@
-// Upcoming Events
+// Upcoming Events Screen
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
@@ -16,17 +16,6 @@ const UpcomingEvents = () => {
         className={backgroundStyle}>
         <View className="flex-1 px-4">
 
-          {/* Upcoming Events */}
-          <View className="mt-3" key={selectedTab}>
-            {selectedTab === 'Warriors' && (
-              <>
-              </>
-            )}
-            {selectedTab === 'Valkyries' && (
-              <>
-              </>
-            )}
-          </View>
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -1,9 +1,9 @@
-// Featured Events Screen
+// Arena Screen
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
 
-const FeaturedEvents = () => {
+const Arena = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const backgroundStyle = 'bg-white dark:bg-black';
   const [selectedTab, setSelectedTab] = useState('Warriors');
@@ -22,4 +22,4 @@ const FeaturedEvents = () => {
   );
 };
 
-export default FeaturedEvents;
+export default Arena;

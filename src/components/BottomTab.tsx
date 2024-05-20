@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faBasketball, faCalendarDays, faHome, faTicketSimple, faVial } from '@fortawesome/free-solid-svg-icons';
 
 import { EventsNavigation, TeamNavigation } from './Components';
-import { Components, Home } from '../screens/Screens';
+import { Arena, Components, Home, Tickets } from '../screens/Screens';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,7 +36,7 @@ const BottomTab = () => {
         }}
       />
       <Tab.Screen
-        name="Roster"
+        name="Team"
         component={TeamNavigation}
         options={{
           headerShown: true,
@@ -50,7 +50,7 @@ const BottomTab = () => {
       />
       <Tab.Screen
         name="My Tickets"
-        component={Components}
+        component={Tickets}
         options={{
           headerShown: true,
           title: 'My Tickets',
@@ -76,7 +76,7 @@ const BottomTab = () => {
       />
       <Tab.Screen
         name="Arena"
-        component={Components}
+        component={Arena}
         options={{
           headerShown: true,
           title: 'Arena',
