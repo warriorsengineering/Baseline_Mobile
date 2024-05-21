@@ -1,14 +1,20 @@
 // Bottom Tab Navigation
-
 import * as React from 'react';
-import { View } from 'react-native';
-
+import { View, Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faBasketball, faCalendarDays, faHome, faTicketSimple, faVial } from '@fortawesome/free-solid-svg-icons';
-
 import { EventsNavigation, TeamNavigation } from './Components';
 import { Arena, Components, Home, Tickets } from '../screens/Screens';
+// Import your image icons
+import homeActiveIcon from '../assets/icons/home-active.png';
+import homeDefaultIcon from '../assets/icons/home-default.png';
+import teamActiveIcon from '../assets/icons/team-active.png';
+import teamDefaultIcon from '../assets/icons/team-default.png';
+import ticketsActiveIcon from '../assets/icons/tickets-active.png';
+import ticketsDefaultIcon from '../assets/icons/tickets-default.png';
+import eventsActiveIcon from '../assets/icons/events-active.png';
+import eventsDefaultIcon from '../assets/icons/events-default.png';
+import arenaActiveIcon from '../assets/icons/arena-active.png';
+import arenaDefaultIcon from '../assets/icons/arena-default.png';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,16 +27,17 @@ const BottomTab = () => {
         tabBarStyle: {
           backgroundColor: '#FFFFFF',
         },
-      }}>
+      }}
+    >
       <Tab.Screen
         name="Home"
         component={Home}
         options={{
           headerShown: true,
           title: 'Home',
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <FontAwesomeIcon icon={focused ? faHome : faHome} size={size} color={color} />
+              <Image source={focused ? homeActiveIcon : homeDefaultIcon} style={{ width: 24, height: 24 }} />
             </View>
           ),
         }}
@@ -41,9 +48,9 @@ const BottomTab = () => {
         options={{
           headerShown: true,
           title: 'Team',
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <FontAwesomeIcon icon={focused ? faBasketball : faBasketball} size={size} color={color} />
+              <Image source={focused ? teamActiveIcon : teamDefaultIcon} style={{ width: 24, height: 24 }} />
             </View>
           ),
         }}
@@ -54,9 +61,9 @@ const BottomTab = () => {
         options={{
           headerShown: true,
           title: 'My Tickets',
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <FontAwesomeIcon icon={focused ? faTicketSimple : faTicketSimple} size={size} color={color} />
+              <Image source={focused ? ticketsActiveIcon : ticketsDefaultIcon} style={{ width: 24, height: 24 }} />
             </View>
           ),
         }}
@@ -67,9 +74,9 @@ const BottomTab = () => {
         options={{
           headerShown: true,
           title: 'Events',
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <FontAwesomeIcon icon={focused ? faCalendarDays : faCalendarDays} size={size} color={color} />
+              <Image source={focused ? eventsActiveIcon : eventsDefaultIcon} style={{ width: 24, height: 24 }} />
             </View>
           ),
         }}
@@ -80,9 +87,9 @@ const BottomTab = () => {
         options={{
           headerShown: true,
           title: 'Arena',
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <FontAwesomeIcon icon={focused ? faVial : faVial} size={size} color={color} />
+              <Image source={focused ? arenaActiveIcon : arenaDefaultIcon} style={{ width: 24, height: 24 }} />
             </View>
           ),
         }}

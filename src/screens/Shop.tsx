@@ -1,4 +1,4 @@
-//Shop Screen
+// Shop Screen
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
