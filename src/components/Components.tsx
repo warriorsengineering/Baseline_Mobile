@@ -11,6 +11,7 @@ import LogoCloud from './LogoCloud';
 import PlayerCard from './PlayerCard';
 import Scoreboard from './Scoreboard';
 import TabSwitcher from './TabSwitcher';
+import TeamLeaders from './TeamLeaders';
 import TeamNavigation from './TeamNavigation';
 import Testimonial from './Testimonial';
 
