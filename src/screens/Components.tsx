@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { Card, ContentBlock, Hero, IconBlock, LogoCloud, PlayerCard, Scoreboard, Testimonial } from '../components/Components';
+import { Card, ContentBlock, GameCardLive, Hero, IconBlock, LogoCloud, PlayerCard, Testimonial } from '../components/Components';
 import * as solidIcons from '@fortawesome/free-solid-svg-icons';
 
 const Components = () => {
@@ -16,18 +16,18 @@ const Components = () => {
         contentInsetAdjustmentBehavior='automatic'
         className={backgroundStyle}>
         {/* Hero Image */}
-          <View>
-            <Hero
-              imageSource={require('../assets/images/hero-img.png')}
-              title={'Image Hero Title'}
-              subtitle={'This is a Subtitle of a Hero component'}
-            />
-          </View>
-        
-          <View className='flex-1 px-4'>
-          {/* Scoreboard */}
+        <View>
+          <Hero
+            imageSource={require('../assets/images/hero-img.png')}
+            title={'Image Hero Title'}
+            subtitle={'This is a Subtitle of a Hero component'}
+          />
+        </View>
+
+        <View className='flex-1 px-4'>
+          {/* Game Card Live */}
           <View className='mt-5'>
-            <Scoreboard
+            <GameCardLive
               warriorsScore={84}
               opponentScore={65}
               opponentName={'Nuggets'}

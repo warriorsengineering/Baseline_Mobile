@@ -1,4 +1,4 @@
-// Scoreboard Component
+// Game Card Live Component
 
 import React from 'react';
 import { View, Text, Image, ImageSourcePropType, TouchableOpacity } from 'react-native';
@@ -7,7 +7,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlay, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 
-interface ScoreboardProps {
+interface GameCardLiveProps {
   warriorsScore: number;
   opponentScore: number;
   opponentName: string;
@@ -17,7 +17,7 @@ interface ScoreboardProps {
   broadcast: string;
 }
 
-const Scoreboard = ({ warriorsScore, opponentScore, opponentName, opponentLogo, quarter, timeRemaining, broadcast }: ScoreboardProps) => {
+const GameCardLive = ({ warriorsScore, opponentScore, opponentName, opponentLogo, quarter, timeRemaining, broadcast }: GameCardLiveProps) => {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
   return (
     <View className='flex bg-secondary shadow-md rounded-md py-8 px-5'>
@@ -70,4 +70,4 @@ const Scoreboard = ({ warriorsScore, opponentScore, opponentName, opponentLogo, 
   );
 };
 
-export default Scoreboard;
+export default GameCardLive;
