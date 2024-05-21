@@ -1,10 +1,11 @@
 // Bottom Tab Navigation
 import * as React from 'react';
 import { View, Image } from 'react-native';
+
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { EventsNavigation, TeamNavigation } from './Components';
-import { Arena, Components, Home, Tickets } from '../screens/Screens';
-// Import your image icons
+import { Arena, Home, Tickets } from '../screens/Screens';
+
 import homeActiveIcon from '../assets/icons/home-active.png';
 import homeDefaultIcon from '../assets/icons/home-default.png';
 import teamActiveIcon from '../assets/icons/team-active.png';
