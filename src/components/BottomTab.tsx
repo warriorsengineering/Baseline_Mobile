@@ -24,7 +24,7 @@ const BottomTab = () => {
     <Tab.Navigator
       screenOptions={{
         tabBarActiveTintColor: '#000000',
-        tabBarInactiveTintColor: '#808080',
+        tabBarInactiveTintColor: '#000000',
         tabBarStyle: {
           backgroundColor: '#FFFFFF',
         },
@@ -38,7 +38,7 @@ const BottomTab = () => {
           title: 'Home',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? homeActiveIcon : homeDefaultIcon} style={{ width: 24, height: 24 }} />
+              <Image source={focused ? homeActiveIcon : homeDefaultIcon} style={{ width: 22, height: 24 }} />
             </View>
           ),
         }}
@@ -64,7 +64,7 @@ const BottomTab = () => {
           title: 'My Tickets',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? ticketsActiveIcon : ticketsDefaultIcon} style={{ width: 24, height: 24 }} />
+              <Image source={focused ? ticketsActiveIcon : ticketsDefaultIcon} style={{ width: 32, height: 20 }} />
             </View>
           ),
         }}
@@ -77,7 +77,7 @@ const BottomTab = () => {
           title: 'Events',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? eventsActiveIcon : eventsDefaultIcon} style={{ width: 24, height: 24 }} />
+              <Image source={focused ? eventsActiveIcon : eventsDefaultIcon} style={{ width: 26, height: 24 }} />
             </View>
           ),
         }}
