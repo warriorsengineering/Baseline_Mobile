@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { TabSwitcher } from '../components/Components';
+import { TabSwitcher, TeamLeaders } from '../components/Components';
 
 const Standings = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -27,10 +27,12 @@ const Standings = () => {
           {/* Standings */}
           <View className='mt-3' key={selectedTab}>
             {selectedTab === 'Warriors' && (
-              <></>
+              <>
+              </>
             )}
             {selectedTab === 'Valkyries' && (
-              <></>
+              <>
+            </>
             )}
           </View>
         </View>
