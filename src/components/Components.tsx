@@ -15,4 +15,4 @@ import TeamLeaders from './TeamLeaders';
 import TeamNavigation from './TeamNavigation';
 import Testimonial from './Testimonial';
 
-export { BottomTab, Card, ContentBlock, EventsNavigation, GameCard, Hero, IconBlock, LogoCloud, PlayerCard, Scoreboard, TabSwitcher, TeamNavigation, Testimonial };
+export { BottomTab, Card, ContentBlock, EventsNavigation, GameCard, Hero, IconBlock, LogoCloud, PlayerCard, Scoreboard, TabSwitcher, TeamLeaders, TeamNavigation, Testimonial };
