@@ -9,7 +9,6 @@ interface TeamLeadersProps {
   image: ImageSourcePropType;
   points: string;
   rebounds: string;
-  // sponsorLogo: ImageSourcePropType;
   steals: string;
   threePercentage: string;
   team: 'warriors' | 'valkyries';
