@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { TabSwitcher } from '../components/Components';
+import { TabSwitcher, TeamLeaders } from '../components/Components';
 
 const Stats = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -27,10 +27,34 @@ const Stats = () => {
           {/* Stats*/}
           <View className='mt-3' key={selectedTab}>
             {selectedTab === 'Warriors' && (
-              <></>
+              <>
+              <TeamLeaders
+                assists={'7.2'}
+                blocks={'0.9'}
+                image={require('../assets/images/player-img.png')}
+                points={'28.1'}
+                rebounds={'6.7'}
+                // sponsorLogo={require('../assets/images/w-player-img.png')}
+                steals={'1.3'}
+                threePercentage={'42.1%'}
+                team='warriors'
+              />
+              </>
             )}
             {selectedTab === 'Valkyries' && (
-              <></>
+              <>
+              <TeamLeaders 
+                assists={'7.3'}
+                blocks={'2.2'}
+                image={require('../assets/images/w-player-img.png')}
+                points={'22.8'}
+                // sponsorLogo={require('../assets/images/w-player-img.png')}
+                rebounds={'9.5'}
+                steals={'1.5'}
+                threePercentage={'44.9%'}
+                team='valkyries'
+            />
+            </>
             )}
           </View>
         </View>
