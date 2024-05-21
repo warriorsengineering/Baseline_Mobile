@@ -15,4 +15,8 @@ import TeamLeaders from './TeamLeaders';
 import TeamNavigation from './TeamNavigation';
 import Testimonial from './Testimonial';
 
+<<<<<<< HEAD
 export { BottomTab, Card, ContentBlock, EventsNavigation, GameCard, GameCardLive, Hero, IconBlock, LogoCloud, PlayerCard, TabSwitcher, TeamLeaders, TeamNavigation, Testimonial };
+=======
+export { BottomTab, Card, ContentBlock, EventsNavigation, GameCard, Hero, IconBlock, LogoCloud, PlayerCard, Scoreboard, TabSwitcher, TeamLeaders, TeamNavigation, Testimonial };
+>>>>>>> 8f9329d (game card and team leaders feature for review)
