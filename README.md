@@ -64,5 +64,11 @@ Components can be modified by editing the files in the `src/components` director
 
 Screens can be modified by editing the files in the `src/screens` directory.
 
+## Configurations and Declarations
+
+Configuration files that are component or user experience specific (i.e., Authentication) reside in the `src/config` directory. All other configuration files (i.e., Metro and Tailwind) reside at the project's root.
+
+There is a `baseline-mobile-env.d.ts` declaration file at the project's root that can be modified as needed.
+
 ---
 **Enjoy Baseline Mobile! :partying_face:**
