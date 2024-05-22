@@ -9,10 +9,11 @@ import GameCardLive from './GameCardLive';
 import Hero from './Hero';
 import IconBlock from './IconBlock';
 import LogoCloud from './LogoCloud';
+import PartnerPresentation from './PartnerPresentation';
 import PlayerCard from './PlayerCard';
 import TabSwitcher from './TabSwitcher';
 import TeamLeaders from './TeamLeaders';
 import TeamNavigation from './TeamNavigation';
 import Testimonial from './Testimonial';
 
-export { BottomTab, Card, ContentBlock, EventsNavigation, GameCard, GameCardLive, Hero, IconBlock, LogoCloud, PlayerCard, TabSwitcher, TeamLeaders, TeamNavigation, Testimonial };
+export { BottomTab, Card, ContentBlock, EventsNavigation, GameCard, GameCardLive, Hero, IconBlock, LogoCloud, PartnerPresentation, PlayerCard, TabSwitcher, TeamLeaders, TeamNavigation, Testimonial };

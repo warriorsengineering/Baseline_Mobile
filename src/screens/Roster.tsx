@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { PlayerCard, TabSwitcher } from '../components/Components';
+import { PartnerPresentation, PlayerCard, TabSwitcher } from '../components/Components';
 
 const Roster = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,6 +28,12 @@ const Roster = () => {
           <View className='mt-3' key={selectedTab}>
             {selectedTab === 'Warriors' && (
               <>
+                {/* Partner Presentation*/}
+                <View className='mt-5'>
+                  <PartnerPresentation
+                    partnerLogo={require('../assets/images/adobe.png')}
+                  />
+                </View>
                 <View className='mt-3'>
                   <PlayerCard
                     image={require('../assets/images/player-img.png')}
@@ -68,6 +74,12 @@ const Roster = () => {
             )}
             {selectedTab === 'Valkyries' && (
               <>
+                {/* Partner Presentation*/}
+                <View className='mt-5'>
+                  <PartnerPresentation
+                    partnerLogo={require('../assets/images/kaiser.png')}
+                  />
+                </View>
                 <View className='mt-3'>
                   <PlayerCard
                     image={require('../assets/images/w-player-img.png')}

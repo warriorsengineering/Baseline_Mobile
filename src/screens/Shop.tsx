@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { TabSwitcher } from '../components/Components';
+import { PartnerPresentation, TabSwitcher } from '../components/Components';
 
 const Shop = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,10 +28,22 @@ const Shop = () => {
           <View className='mt-3' key={selectedTab}>
             {selectedTab === 'Warriors' && (
               <>
+                {/* Partner Presentation*/}
+                <View className='mt-5'>
+                  <PartnerPresentation
+                    partnerLogo={require('../assets/images/adobe.png')}
+                  />
+                </View>
               </>
             )}
             {selectedTab === 'Valkyries' && (
               <>
+                {/* Partner Presentation*/}
+                <View className='mt-5'>
+                  <PartnerPresentation
+                    partnerLogo={require('../assets/images/kaiser.png')}
+                  />
+                </View>
               </>
             )}
           </View>

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { GameCard, TabSwitcher } from '../components/Components';
+import { GameCard, PartnerPresentation, TabSwitcher } from '../components/Components';
 
 const Schedule = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -32,6 +32,12 @@ const Schedule = () => {
           <View className='mt-3 mb-3' key={selectedTab}>
             {selectedTab === 'Warriors' && (
               <>
+                {/* Partner Presentation*/}
+                <View className='mt-5'>
+                  <PartnerPresentation
+                    partnerLogo={require('../assets/images/adobe.png')}
+                  />
+                </View>
                 <GameCard
                   gsLogo={require('../assets/images/warriors-logo.png')}
                   gsInitial={'GSW'}
@@ -47,6 +53,12 @@ const Schedule = () => {
             )}
             {selectedTab === 'Valkyries' && (
               <>
+                {/* Partner Presentation*/}
+                <View className='mt-5'>
+                  <PartnerPresentation
+                    partnerLogo={require('../assets/images/kaiser.png')}
+                  />
+                </View>
                 <GameCard
                   gsLogo={require('../assets/images/valkyries-logo.png')}
                   gsInitial={'GSV'}
