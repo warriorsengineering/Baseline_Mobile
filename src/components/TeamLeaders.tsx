@@ -44,7 +44,7 @@ const TeamLeaders = ({ assists, blocks, image, points, rebounds, steals, threePe
     </View>
     <View className={`flex-1 border-b-2 ${borderColor}`}>
       <Text className='text-muted mb-2 text-right font-muted'>Assists</Text>
-      <View className='flex-row flex-row-reverse justify-between mt-2'>
+      <View className='flex-row-reverse justify-between mt-2'>
         <Image
           source={image}
           className='w-16 h-14'
@@ -72,7 +72,7 @@ const TeamLeaders = ({ assists, blocks, image, points, rebounds, steals, threePe
     </View>
     <View className={`flex-1 border-b-2 ${borderColor}`}>
       <Text className='text-muted mb-2 text-right font-muted'>3PT Percentage</Text>
-      <View className='flex-row flex-row-reverse justify-between mt-2'>
+      <View className='flex-row-reverse justify-between mt-2'>
         <Image
           source={image}
           className='w-16 h-14'
@@ -100,7 +100,7 @@ const TeamLeaders = ({ assists, blocks, image, points, rebounds, steals, threePe
     </View>
     <View className={`flex-1 border-b-2 ${borderColor}`}>
       <Text className='text-muted mb-2 text-right font-muted'>Blocks</Text>
-      <View className='flex-row flex-row-reverse justify-between mt-2'>
+      <View className='flex-row-reverse justify-between mt-2'>
         <Image
           source={image}
           className='w-16 h-14'

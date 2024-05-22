@@ -28,7 +28,9 @@ const Components = () => {
           {/* Game Card Live */}
           <View className='mt-5'>
             <GameCardLive
-              warriorsScore={84}
+              gsScore={84}
+              gsName={'Warriors'}
+              gsLogo={require('../assets/images/warriors-logo.png')}
               opponentScore={65}
               opponentName={'Nuggets'}
               opponentLogo={require('../assets/images/nuggets-logo.png')}

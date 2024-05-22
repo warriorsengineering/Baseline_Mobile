@@ -8,7 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlay, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 
 interface GameCardLiveProps {
-  warriorsScore: number;
+  gsScore: number;
+  gsName: string;
+  gsLogo: ImageSourcePropType;
   opponentScore: number;
   opponentName: string;
   opponentLogo: ImageSourcePropType;
@@ -17,20 +19,20 @@ interface GameCardLiveProps {
   broadcast: string;
 }
 
-const GameCardLive = ({ warriorsScore, opponentScore, opponentName, opponentLogo, quarter, timeRemaining, broadcast }: GameCardLiveProps) => {
+const GameCardLive = ({ gsScore, gsName, gsLogo, opponentScore, opponentName, opponentLogo, quarter, timeRemaining, broadcast }: GameCardLiveProps) => {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
   return (
     <View className='flex bg-secondary shadow-md rounded-md py-8 px-5'>
       <View className='flex-row justify-between mb-5'>
         <View className='flex-col items-center'>
           <Image
-            source={require('../assets/images/warriors-logo.png')}
+            source={gsLogo}
             className='w-12 h-12'
           />
-          <Text className='text-primary font-semibold text-md mt-3'>Warriors</Text>
+          <Text className='text-primary font-semibold text-md mt-3'>{gsName}</Text>
         </View>
         <View className='flex-col mt-1'>
-          <Text className='text-primary font-bold text-4xl'>{warriorsScore}</Text>
+          <Text className='text-primary font-bold text-4xl'>{gsScore}</Text>
         </View>
         <View className='flex-col items-center'>
           <Text className='text-red-500 font-bold text-sm'>LIVE</Text>

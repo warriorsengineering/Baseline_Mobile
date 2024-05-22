@@ -6,18 +6,18 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 interface GameCardProps {
-     broadcast: string;
-     gameLocation: string;
-     gameTime: string;
-     gsInitial: string;
-     gsLogo: ImageSourcePropType;
-     gsRecord: string;
-     opponentInitial: string;
-     opponentLogo: ImageSourcePropType;
-     opponentRecord: string;
+  gsLogo: ImageSourcePropType;
+  gsInitial: string;
+  gsRecord: string;
+  opponentLogo: ImageSourcePropType;
+  opponentInitial: string;
+  opponentRecord: string;
+  broadcast: string;
+  gameLocation: string;
+  gameTime: string;
 }
 
-const GameCard = ({ broadcast, gameLocation, gameTime, gsInitial, gsLogo, gsRecord, opponentInitial, opponentLogo, opponentRecord }: GameCardProps) => {
+const GameCard = ({ gsLogo, gsInitial, gsRecord, opponentLogo, opponentInitial, opponentRecord, broadcast, gameLocation, gameTime }: GameCardProps) => {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
   return (
     <View className='flex bg-secondary shadow-md rounded-md py-8 px-5'>
