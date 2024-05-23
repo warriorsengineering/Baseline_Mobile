@@ -1,4 +1,5 @@
 // Bottom Tab Navigation
+
 import * as React from 'react';
 import { View, Image } from 'react-native';
 
@@ -51,7 +52,7 @@ const BottomTab = () => {
           title: 'Team',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? teamActiveIcon : teamDefaultIcon} style={{ width: 24, height: 24 }} />
+              <Image source={focused ? teamActiveIcon : teamDefaultIcon} style={focused ? { width: 28, height: 28 } : { width: 24, height: 24 }} />
             </View>
           ),
         }}
