@@ -33,7 +33,7 @@ const Home = () => {
             <TouchableOpacity
               className='bg-primary p-5 mt-3 rounded-md'
               accessibilityLabel='Source code for Baseline Mobile'
-              onPress={() => handleExternalLink('https://github.com/josephgknox/Baseline_Mobile/')}
+              onPress={() => handleExternalLink('https://github.com/warriorsengineering/Baseline_Mobile')}
             >
               <Text className='text-secondary text-lg font-bold text-center'>Source Code</Text>
             </TouchableOpacity>
