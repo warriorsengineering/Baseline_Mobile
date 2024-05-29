@@ -29,7 +29,7 @@ const Stats = () => {
             {selectedTab === 'Warriors' && (
               <>
                 {/* Partner Presentation*/}
-                <View className='mt-5'>
+                <View className='my-5'>
                   <PartnerPresentation
                     partnerLogo={require('../assets/images/adobe.png')}
                   />
@@ -49,7 +49,7 @@ const Stats = () => {
             )}
             {selectedTab === 'Valkyries' && (
               <>
-                <View className='mt-5'>
+                <View className='my-5'>
                   <PartnerPresentation
                     partnerLogo={require('../assets/images/kaiser.png')}
                   />
