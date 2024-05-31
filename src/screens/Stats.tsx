@@ -35,12 +35,12 @@ const Stats = () => {
                   />
                 </View>
                 <TeamLeaders
+                  seasonYear='2023-24'
                   assists={'7.2'}
                   blocks={'0.9'}
                   image={require('../assets/images/player-img.png')}
                   points={'28.1'}
                   rebounds={'6.7'}
-                  // sponsorLogo={require('../assets/images/w-player-img.png')}
                   steals={'1.3'}
                   threePercentage={'42.1%'}
                   team='warriors'
@@ -55,11 +55,11 @@ const Stats = () => {
                   />
                 </View>
                 <TeamLeaders
+                  seasonYear='2023-24'
                   assists={'7.3'}
                   blocks={'2.2'}
                   image={require('../assets/images/w-player-img.png')}
                   points={'22.8'}
-                  // sponsorLogo={require('../assets/images/w-player-img.png')}
                   rebounds={'9.5'}
                   steals={'1.5'}
                   threePercentage={'44.9%'}

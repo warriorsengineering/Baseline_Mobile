@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { Card, ContentBlock, GameCardLive, Hero, IconBlock, LogoCloud, PlayerCard, Testimonial } from '../components/Components';
+import { Card, ContentBlock, FeaturedEventCard, GameCard, GameCardLive, Hero, IconBlock, LogoCloud, PlayerCard, TeamLeaders, Testimonial } from '../components/Components';
 import * as solidIcons from '@fortawesome/free-solid-svg-icons';
 
 const Components = () => {
@@ -40,6 +40,32 @@ const Components = () => {
             />
           </View>
 
+          {/* Game Card */}
+          <View className='mt-5'>
+            <GameCard
+              gsLogo={require('../assets/images/warriors-logo.png')}
+              gsInitial={'GSW'}
+              gsRecord={'65-0'}
+              opponentLogo={require('../assets/images/nuggets-logo.png')}
+              opponentInitial={'DEN'}
+              opponentRecord={'45-22'}
+              broadcast={'NBC Sports'}
+              gameLocation={'vs'}
+              gameTime={'Sun, Feb 25 at 7:00 PM'}
+            />
+          </View>
+
+          {/* Featured Event Card */}
+          <View className='mt-5'>
+            <FeaturedEventCard
+              image={require('../assets/images/janet-jackson-event.png')}
+              dateTime={'Wed, Jun 12 at 8:00 PM'}
+              title={'Janet Jackson'}
+              subtitle={'With Special Guest Nelly'}
+              ticketsUrl={'https://www.ticketmaster.com/chase-center-tickets-san-francisco/venue/230012'}
+              detailsUrl={'https://www.chasecenter.com/events/janet-jackson-20240612'} />
+          </View>
+
           {/* Player Card */}
           <View className='mt-5'>
             <PlayerCard
@@ -48,6 +74,43 @@ const Components = () => {
               firstName={'Player'}
               lastName={'Name'}
               position={'Position'}
+            />
+          </View>
+          <View className='mt-5'>
+            <PlayerCard
+              image={require('../assets/images/w-player-img.png')}
+              jerseyNumber={10}
+              firstName={'W Player'}
+              lastName={'Name'}
+              position={'Position'}
+            />
+          </View>
+
+          {/* Team Leaders */}
+          <View className='mt-5'>
+            <TeamLeaders
+              seasonYear='2023-24'
+              assists={'7.2'}
+              blocks={'0.9'}
+              image={require('../assets/images/player-img.png')}
+              points={'28.1'}
+              rebounds={'6.7'}
+              steals={'1.3'}
+              threePercentage={'42.1%'}
+              team='warriors'
+            />
+          </View>
+          <View className='mt-5'>
+            <TeamLeaders
+              seasonYear='2023-24'
+              assists={'7.3'}
+              blocks={'2.2'}
+              image={require('../assets/images/w-player-img.png')}
+              points={'22.8'}
+              rebounds={'9.5'}
+              steals={'1.5'}
+              threePercentage={'44.9%'}
+              team='valkyries'
             />
           </View>
 

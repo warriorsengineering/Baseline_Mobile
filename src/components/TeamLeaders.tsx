@@ -4,6 +4,7 @@ import React from 'react';
 import { Image, ImageSourcePropType, Text, View } from 'react-native';
 
 interface TeamLeadersProps {
+  seasonYear: string;
   assists: string;
   blocks: string;
   image: ImageSourcePropType;
@@ -14,7 +15,7 @@ interface TeamLeadersProps {
   team: 'warriors' | 'valkyries';
 }
 
-const TeamLeaders = ({ assists, blocks, image, points, rebounds, steals, threePercentage, team }: TeamLeadersProps) => {
+const TeamLeaders = ({ seasonYear, assists, blocks, image, points, rebounds, steals, threePercentage, team }: TeamLeadersProps) => {
   const warriorsBorder = 'border-warriors-royal-blue dark:border-black';
   const valkyriesBorder = 'border-valkyries-violet dark:border-black';
 
@@ -23,7 +24,7 @@ const TeamLeaders = ({ assists, blocks, image, points, rebounds, steals, threePe
   return (
     <View className='flex bg-transparent py-8 px-2'>
       <View className='mb-5'>
-        <Text className='text-primary text-center font-bold'>2023-24 Team Leaders</Text>
+        <Text className='text-primary text-center font-bold'>{seasonYear} Team Leaders</Text>
       </View>
       <View className='flex-row flex-wrap'>
         <View className={`flex-1 mr-4 border-b-2 ${borderColor}`}>
