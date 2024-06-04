@@ -3,6 +3,12 @@
 import React from 'react';
 import { View, Image, Text, ScrollView, StyleSheet } from 'react-native';
 import { Table, TableWrapper, Row } from 'react-native-table-component';
+import { remapProps } from 'nativewind';
+
+const StyledRow = remapProps(Row, {
+  className: 'style',
+  textClassName: 'textStyle',
+});
 
 const DivisionStandings = () => {
   const tableHead = ['#', 'Team', 'W', 'L', 'PCT', 'GB', 'Conf', 'Div', 'Home', 'Away', 'L10', 'STRK']; // Adjusted headers
@@ -77,11 +83,11 @@ const DivisionStandings = () => {
           <View className='flex flex-row'>
             {/* Static Columns (# and Team) */}
             <Table borderStyle={{ borderColor: 'transparent' }}>
-              <Row
+              <StyledRow
                 data={tableHead.slice(0, 2)}
-                style={{ height: 40 }}  // Add top border here
+                className='h-[40px]'
                 widthArr={[10, 80]}
-                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
+                textClassName='text-center font-bold'
               />
               <TableWrapper style={styles.tableWrapper}>
                 {divData.teams.map((teamData, index) => (
@@ -106,11 +112,11 @@ const DivisionStandings = () => {
             {/* Scrollable Columns (W, L, PCT, GB) */}
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <Table borderStyle={{ borderColor: 'transparent' }}>
-                <Row
+                <StyledRow
                   data={tableHead.slice(2)}
-                  style={{ height: 40 }}
+                  className='h-[40px]'
                   widthArr={[40, 60, 60, 55, 80, 70, 80, 70, 70, 70]} // Adjust width for W, L, PCT, GB
-                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
+                  textClassName='text-center font-bold pl-[5px]'
                 />
                 <TableWrapper style={{ width: '100%' }}>
                   {divData.teams.map((teamData, index) => (

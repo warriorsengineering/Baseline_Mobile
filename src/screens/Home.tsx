@@ -4,7 +4,6 @@ import React from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, ScrollView, Linking, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { cssInterop } from 'nativewind';
 import { firebase_auth } from '../config/firebase';
 
 const Home = () => {
