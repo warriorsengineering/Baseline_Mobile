@@ -69,15 +69,6 @@ const DivisionStandings = () => {
     },
   ];
 
-  const cellStyle = {
-    padding: 10,
-    alignItems: 'center',
-  };
-  const headerCellStyle = {
-    ...cellStyle,
-    backgroundColor: '#F0F0F0',
-  };
-
   return (
     <View>
       {DivisionData.map((divData) => (
@@ -89,9 +80,8 @@ const DivisionStandings = () => {
               <Row
                 data={tableHead.slice(0, 2)}
                 style={{ height: 40 }}  // Add top border here
-                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
                 widthArr={[10, 80]}
-                cellStyle={headerCellStyle}
+                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
               />
               <TableWrapper style={styles.tableWrapper}>
                 {divData.teams.map((teamData, index) => (
@@ -99,12 +89,15 @@ const DivisionStandings = () => {
                     key={index}
                     data={teamData.slice(0, 2)}
                     style={[
-                      index % 2 && { backgroundColor: 'transparent' },
-                      { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd' },
+                      index % 2 ? { backgroundColor: 'transparent' } : undefined,
+                      {
+                        height: 50,
+                        borderBottomWidth: 1,
+                        borderBottomColor: '#ddd',
+                      },
                     ]}
                     widthArr={[30, 230]}
-                    cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 2, borderTopColor: '#ddd' } : cellStyle}
-                    textStyle={index === 0 ? { fontWeight: 'bold' } : ''}
+                    textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
                   />
                 ))}
               </TableWrapper>
@@ -116,19 +109,25 @@ const DivisionStandings = () => {
                 <Row
                   data={tableHead.slice(2)}
                   style={{ height: 40 }}
-                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
                   widthArr={[40, 60, 60, 55, 80, 70, 80, 70, 70, 70]} // Adjust width for W, L, PCT, GB
-                  cellStyle={headerCellStyle}
+                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
                 />
                 <TableWrapper style={{ width: '100%' }}>
                   {divData.teams.map((teamData, index) => (
                     <Row
                       key={index}
                       data={teamData.slice(2)}
-                      style={[index % 2 && { backgroundColor: 'transparent' }, { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd', paddingLeft: 5 }]}
-                      textStyle={{ textAlign: 'center', paddingLeft: 10 }}
+                      style={[
+                        index % 2 ? { backgroundColor: 'transparent' } : undefined,
+                        {
+                          height: 50,
+                          borderBottomWidth: 1,
+                          borderBottomColor: '#ddd',
+                          paddingLeft: 5,
+                        },
+                      ]}
                       widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
-                      cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 1, borderTopColor: '#ddd' } : cellStyle}
+                      textStyle={{ textAlign: 'center', paddingLeft: 10 }}
                     />
                   ))}
                 </TableWrapper>

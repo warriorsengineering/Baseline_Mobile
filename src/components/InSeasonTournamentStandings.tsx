@@ -72,14 +72,6 @@ const InSeasonTournamentStandings = () => {
     },
   ];
 
-  const cellStyle = {
-    padding: 10,
-    alignItems: 'center',
-  };
-  const headerCellStyle = {
-    ...cellStyle,
-    backgroundColor: '#F0F0F0',
-  };
   return (
     <View>
       {WestGroupData.map((groupData) => (
@@ -91,9 +83,8 @@ const InSeasonTournamentStandings = () => {
               <Row
                 data={tableHead.slice(0, 2)}
                 style={{ height: 40 }}
-                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
                 widthArr={[10, 80]}
-                cellStyle={headerCellStyle}
+                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
               />
               <TableWrapper style={styles.tableWrapper}>
                 {groupData.teams.map((teamData, index) => (
@@ -101,11 +92,14 @@ const InSeasonTournamentStandings = () => {
                     key={index}
                     data={teamData.slice(0, 2)}
                     style={[
-                      index % 2 && { backgroundColor: 'transparent' },
-                      { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd' }
+                      index % 2 ? { backgroundColor: 'transparent' } : undefined,
+                      {
+                        height: 50,
+                        borderBottomWidth: 1,
+                        borderBottomColor: '#ddd',
+                      },
                     ]}
                     widthArr={[30, 230]}
-                    cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 2, borderTopColor: '#ddd' } : cellStyle}
                     textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
                   />
                 ))}
@@ -118,9 +112,8 @@ const InSeasonTournamentStandings = () => {
                 <Row
                   data={tableHead.slice(2)}
                   style={{ height: 40 }}
-                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 10 }}
                   widthArr={[40, 60, 45, 70]}
-                  cellStyle={headerCellStyle}
+                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 10 }}
                 />
                 <TableWrapper style={{ width: '100%' }}>
                   {groupData.teams.map((teamData, index) => (
@@ -128,11 +121,15 @@ const InSeasonTournamentStandings = () => {
                       key={index}
                       data={teamData.slice(2)}
                       style={[
-                        index % 2 && { backgroundColor: 'transparent' },
-                        { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd', paddingLeft: 15 }
+                        index % 2 ? { backgroundColor: 'transparent' } : undefined,
+                        {
+                          height: 50,
+                          borderBottomWidth: 1,
+                          borderBottomColor: '#ddd',
+                          paddingLeft: 15,
+                        },
                       ]}
                       widthArr={[50, 50, 60, 70]}
-                      cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 1, borderTopColor: '#ddd' } : cellStyle}
                     />
                   ))}
                 </TableWrapper>
@@ -152,9 +149,8 @@ const InSeasonTournamentStandings = () => {
               <Row
                 data={tableHead.slice(0, 2)}
                 style={{ height: 40 }}
-                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
                 widthArr={[10, 80]}
-                cellStyle={headerCellStyle}
+                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
               />
               <TableWrapper style={styles.tableWrapper}>
                 {groupData.teams.map((teamData, index) => (
@@ -162,11 +158,14 @@ const InSeasonTournamentStandings = () => {
                     key={index}
                     data={teamData.slice(0, 2)}
                     style={[
-                      index % 2 && { backgroundColor: 'transparent' },
-                      { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd' }
+                      index % 2 ? { backgroundColor: 'transparent' } : undefined,
+                      {
+                        height: 50,
+                        borderBottomWidth: 1,
+                        borderBottomColor: '#ddd',
+                      },
                     ]}
                     widthArr={[30, 230]}
-                    cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 2, borderTopColor: '#ddd' } : cellStyle}
                     textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
                   />
                 ))}
@@ -179,9 +178,8 @@ const InSeasonTournamentStandings = () => {
                 <Row
                   data={tableHead.slice(2)}
                   style={{ height: 40 }}
-                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 10 }}
                   widthArr={[40, 60, 45, 70]}
-                  cellStyle={headerCellStyle}
+                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 10 }}
                 />
                 <TableWrapper style={{ width: '100%' }}>
                   {groupData.teams.map((teamData, index) => (
@@ -189,11 +187,15 @@ const InSeasonTournamentStandings = () => {
                       key={index}
                       data={teamData.slice(2)}
                       style={[
-                        index % 2 && { backgroundColor: 'transparent' },
-                        { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd', paddingLeft: 15 }
+                        index % 2 ? { backgroundColor: 'transparent' } : undefined,
+                        {
+                          height: 50,
+                          borderBottomWidth: 1,
+                          borderBottomColor: '#ddd',
+                          paddingLeft: 15,
+                        },
                       ]}
                       widthArr={[50, 50, 60, 70]}
-                      cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 1, borderTopColor: '#ddd' } : cellStyle}
                     />
                   ))}
                 </TableWrapper>

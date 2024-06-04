@@ -49,14 +49,6 @@ const ConferenceStandings = () => {
     },
   ];
 
-  const cellStyle = {
-    padding: 10,
-    alignItems: 'center',
-  };
-  const headerCellStyle = {
-    ...cellStyle,
-    backgroundColor: '#F0F0F0',
-  };
   return (
     <View>
       {ConferenceData.map((confData) => (
@@ -68,9 +60,8 @@ const ConferenceStandings = () => {
               <Row
                 data={tableHead.slice(0, 2)}
                 style={{ height: 40 }}
-                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
                 widthArr={[10, 80]} // Widths for # and Team columns
-              // cellStyle={headerCellStyle}
+                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
               />
               <TableWrapper style={styles.tableWrapper}>
                 {confData.teams.map((teamData, index) => (
@@ -78,7 +69,7 @@ const ConferenceStandings = () => {
                     key={index}
                     data={teamData.slice(0, 2)}
                     style={[
-                      index % 2 && { backgroundColor: 'transparent' },
+                      index % 2 ? { backgroundColor: 'transparent' } : undefined,
                       {
                         height: 50,
                         borderBottomWidth: 1,
@@ -87,7 +78,6 @@ const ConferenceStandings = () => {
                       },
                     ]}
                     widthArr={[30, 230]} // Widths for # and Team columns
-                    cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 2, borderTopColor: '#ddd' } : cellStyle}
                     textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
                   />
                 ))}
@@ -99,9 +89,8 @@ const ConferenceStandings = () => {
                 <Row
                   data={tableHead.slice(2)}
                   style={{ height: 40 }}
-                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
                   widthArr={[40, 60, 60, 55, 80, 70, 80, 70, 70, 70]} // Adjust width for W, L, PCT, GB
-                  cellStyle={headerCellStyle}
+                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
                 />
                 <TableWrapper style={{ width: '100%' }}>
                   {confData.teams.map((teamData, index) => (
@@ -109,7 +98,7 @@ const ConferenceStandings = () => {
                       key={index}
                       data={teamData.slice(2)}
                       style={[
-                        index % 2 && { backgroundColor: 'transparent' },
+                        index % 2 ? { backgroundColor: 'transparent' } : undefined,
                         {
                           height: 50,
                           borderBottomWidth: 1,
@@ -117,9 +106,8 @@ const ConferenceStandings = () => {
                           paddingLeft: 5,
                         },
                       ]}
-                      textStyle={{ textAlign: 'center', paddingLeft: 10 }}
                       widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
-                      cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 1, borderTopColor: '#ddd' } : cellStyle}
+                      textStyle={{ textAlign: 'center', paddingLeft: 10 }}
                     />
                   ))}
                 </TableWrapper>
