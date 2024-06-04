@@ -18,7 +18,7 @@ const NBA: Tab[] = [
 
 const WNBA: Tab[] = [
   { label: 'Conference', key: 'conference' },
-  { label: "Commisioner's Cup", key: 'commissioners-cup' },
+  { label: "Commissioner's Cup", key: 'commissioners-cup' },
   { label: 'League', key: 'league' },
 ];
 
