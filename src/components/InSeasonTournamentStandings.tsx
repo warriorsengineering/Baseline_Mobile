@@ -10,31 +10,31 @@ const InSeasonTournamentStandings = () => {
     {
       group: 'West Group A',
       teams: [
-        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
       ]
     },
     {
       group: 'West Group B',
       teams: [
-        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
       ]
     },
     {
       group: 'West Group C',
       teams: [
-        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
       ]
     },
 
@@ -43,31 +43,31 @@ const InSeasonTournamentStandings = () => {
     {
       group: 'East Group A',
       teams: [
-        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
       ]
     },
     {
       group: 'East Group B',
       teams: [
-        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
       ]
     },
     {
       group: 'East Group C',
       teams: [
-        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/nuggets-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
       ]
     },
   ];
@@ -85,7 +85,7 @@ const InSeasonTournamentStandings = () => {
       {WestGroupData.map((groupData) => (
         <View key={groupData.group}>
           <Text className='font-bold mb-5 mt-5 text-left text-xl'>{groupData.group}</Text>
-          <View style={{ flexDirection: 'row' }}>
+          <View className='flex flex-row'>
             {/* Static Columns (# and Team) */}
             <Table borderStyle={{ borderColor: 'transparent' }}>
               <Row
@@ -144,9 +144,9 @@ const InSeasonTournamentStandings = () => {
       {/* Repeat the same structure for EasterngroupData */}
       {EastGroupData.map((groupData) => (
         <View key={groupData.group}>
-          <Text style={{ fontWeight: 'bold', marginBottom: 10, marginTop: 20, textAlign: 'left', fontSize: 18 }}>{groupData.group}</Text>
+          <Text className='font-bold mb-5 mt-5 text-left text-xl'>{groupData.group}</Text>
 
-          <View style={{ flexDirection: 'row' }}>
+          <View className='flex flex-row'>
             {/* Static Columns (# and Team) */}
             <Table borderStyle={{ borderColor: 'transparent' }}>
               <Row
