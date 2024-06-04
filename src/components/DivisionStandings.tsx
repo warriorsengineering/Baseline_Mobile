@@ -88,14 +88,14 @@ const DivisionStandings = () => {
                   <Row
                     key={index}
                     data={teamData.slice(0, 2)}
-                    style={[
+                    style={StyleSheet.flatten([
                       index % 2 ? { backgroundColor: 'transparent' } : undefined,
                       {
                         height: 50,
                         borderBottomWidth: 1,
                         borderBottomColor: '#ddd',
                       },
-                    ]}
+                    ])}
                     widthArr={[30, 230]}
                     textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
                   />
@@ -117,7 +117,7 @@ const DivisionStandings = () => {
                     <Row
                       key={index}
                       data={teamData.slice(2)}
-                      style={[
+                      style={StyleSheet.flatten([
                         index % 2 ? { backgroundColor: 'transparent' } : undefined,
                         {
                           height: 50,
@@ -125,7 +125,7 @@ const DivisionStandings = () => {
                           borderBottomColor: '#ddd',
                           paddingLeft: 5,
                         },
-                      ]}
+                      ])}
                       widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
                       textStyle={{ textAlign: 'center', paddingLeft: 10 }}
                     />

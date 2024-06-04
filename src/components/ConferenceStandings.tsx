@@ -68,7 +68,7 @@ const ConferenceStandings = () => {
                   <Row
                     key={index}
                     data={teamData.slice(0, 2)}
-                    style={[
+                    style={StyleSheet.flatten([
                       index % 2 ? { backgroundColor: 'transparent' } : undefined,
                       {
                         height: 50,
@@ -76,7 +76,7 @@ const ConferenceStandings = () => {
                         borderBottomColor: index === 9 ? '#000' : '#ddd',
                         borderTopColor: '#ddd',
                       },
-                    ]}
+                    ])}
                     widthArr={[30, 230]} // Widths for # and Team columns
                     textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
                   />
@@ -97,7 +97,7 @@ const ConferenceStandings = () => {
                     <Row
                       key={index}
                       data={teamData.slice(2)}
-                      style={[
+                      style={StyleSheet.flatten([
                         index % 2 ? { backgroundColor: 'transparent' } : undefined,
                         {
                           height: 50,
@@ -105,7 +105,7 @@ const ConferenceStandings = () => {
                           borderBottomColor: index === 9 ? '#000' : '#ddd',
                           paddingLeft: 5,
                         },
-                      ]}
+                      ])}
                       widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
                       textStyle={{ textAlign: 'center', paddingLeft: 10 }}
                     />

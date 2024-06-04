@@ -91,14 +91,14 @@ const InSeasonTournamentStandings = () => {
                   <Row
                     key={index}
                     data={teamData.slice(0, 2)}
-                    style={[
+                    style={StyleSheet.flatten([
                       index % 2 ? { backgroundColor: 'transparent' } : undefined,
                       {
                         height: 50,
                         borderBottomWidth: 1,
                         borderBottomColor: '#ddd',
                       },
-                    ]}
+                    ])}
                     widthArr={[30, 230]}
                     textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
                   />
@@ -120,7 +120,7 @@ const InSeasonTournamentStandings = () => {
                     <Row
                       key={index}
                       data={teamData.slice(2)}
-                      style={[
+                      style={StyleSheet.flatten([
                         index % 2 ? { backgroundColor: 'transparent' } : undefined,
                         {
                           height: 50,
@@ -128,7 +128,7 @@ const InSeasonTournamentStandings = () => {
                           borderBottomColor: '#ddd',
                           paddingLeft: 15,
                         },
-                      ]}
+                      ])}
                       widthArr={[50, 50, 60, 70]}
                     />
                   ))}
@@ -157,14 +157,14 @@ const InSeasonTournamentStandings = () => {
                   <Row
                     key={index}
                     data={teamData.slice(0, 2)}
-                    style={[
+                    style={StyleSheet.flatten([
                       index % 2 ? { backgroundColor: 'transparent' } : undefined,
                       {
                         height: 50,
                         borderBottomWidth: 1,
                         borderBottomColor: '#ddd',
                       },
-                    ]}
+                    ])}
                     widthArr={[30, 230]}
                     textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
                   />
@@ -186,7 +186,7 @@ const InSeasonTournamentStandings = () => {
                     <Row
                       key={index}
                       data={teamData.slice(2)}
-                      style={[
+                      style={StyleSheet.flatten([
                         index % 2 ? { backgroundColor: 'transparent' } : undefined,
                         {
                           height: 50,
@@ -194,7 +194,7 @@ const InSeasonTournamentStandings = () => {
                           borderBottomColor: '#ddd',
                           paddingLeft: 15,
                         },
-                      ]}
+                      ])}
                       widthArr={[50, 50, 60, 70]}
                     />
                   ))}
