@@ -51,37 +51,36 @@ const Standings = () => {
                     partnerLogo={require('../assets/images/adobe.png')}
                   />
                 </View>
-            {/* Table Tabs and Standings */}
-            <View className='mt-5'>
-            <FlatList
-                horizontal
-                data={NBA}
-                className={'bg-white flex-1'}
-                renderItem={({ item, index }) => ( 
-                  <TouchableOpacity
-                  onPress={() => setActiveTableTab(index)}
-                  className={`p-2.5 mr-2.5 ${
-                    activeTableTab === index ? 'font-bold border-b border-black' : ''
-                  }`}
-                >
-                  <Text className={`${activeTableTab === index ? 'font-semibold' : 'text-muted'}`}>{item.label}</Text>
-                </TouchableOpacity>
-                )}
-                keyExtractor={(item) => item.key}
-                showsHorizontalScrollIndicator={false}
-              />
-              {/* Conditionally Render Standings Table */}
-              <View className="mt-5">
-              {activeTableTab === 0 ? ( 
-                <ConferenceStandings />
-              ) : activeTableTab === 1 ? (
-                <DivisionStandings />
-              ) : (
-                <InSeasonTournamentStandings /> 
-              )}
-            </View>
-            </View>
-            </>
+                {/* Table Tabs and Standings */}
+                <View className='mt-5'>
+                  <FlatList
+                    horizontal
+                    data={NBA}
+                    className={'bg-white flex-1'}
+                    renderItem={({ item, index }) => (
+                      <TouchableOpacity
+                        onPress={() => setActiveTableTab(index)}
+                        className={`p-2.5 mr-2.5 ${activeTableTab === index ? 'font-bold border-b border-black' : ''
+                          }`}
+                      >
+                        <Text className={`${activeTableTab === index ? 'font-semibold' : 'text-muted'}`}>{item.label}</Text>
+                      </TouchableOpacity>
+                    )}
+                    keyExtractor={(item) => item.key}
+                    showsHorizontalScrollIndicator={false}
+                  />
+                  {/* Conditionally Render Standings Table */}
+                  <View className="mt-5">
+                    {activeTableTab === 0 ? (
+                      <ConferenceStandings />
+                    ) : activeTableTab === 1 ? (
+                      <DivisionStandings />
+                    ) : (
+                      <InSeasonTournamentStandings />
+                    )}
+                  </View>
+                </View>
+              </>
             )}
             {selectedTab === 'Valkyries' && (
               <>
@@ -91,30 +90,29 @@ const Standings = () => {
                     partnerLogo={require('../assets/images/kaiser.png')}
                   />
                 </View>
-            {/* Table Tabs and Standings */}
-            <View className="mt-5">
-            <FlatList
-                horizontal
-                data={WNBA}
-                className={'bg-white'}
-                renderItem={({ item, index }) => (
-              <TouchableOpacity
-                onPress={() => setActiveTableTab(index)}
-                className={`p-2.5 mr-2.5 ${
-                  activeTableTab === index ? 'font-semibold border-b border-black' : ''
-                }`}
-              >
-                <Text className={`${activeTableTab === index ? 'font-bold' : 'text-muted'}`}>{item.label}</Text>
-              </TouchableOpacity>
-                )}
-                keyExtractor={(item) => item.key}
-                showsHorizontalScrollIndicator={false}
-              />
-              {/* Conditionally Render Standings Table */}
-              <View className="mt-5">
-                <WConferenceStandings />
-              </View>
-            </View>
+                {/* Table Tabs and Standings */}
+                <View className="mt-5">
+                  <FlatList
+                    horizontal
+                    data={WNBA}
+                    className={'bg-white'}
+                    renderItem={({ item, index }) => (
+                      <TouchableOpacity
+                        onPress={() => setActiveTableTab(index)}
+                        className={`p-2.5 mr-2.5 ${activeTableTab === index ? 'font-semibold border-b border-black' : ''
+                          }`}
+                      >
+                        <Text className={`${activeTableTab === index ? 'font-bold' : 'text-muted'}`}>{item.label}</Text>
+                      </TouchableOpacity>
+                    )}
+                    keyExtractor={(item) => item.key}
+                    showsHorizontalScrollIndicator={false}
+                  />
+                  {/* Conditionally Render Standings Table */}
+                  <View className="mt-5">
+                    <WConferenceStandings />
+                  </View>
+                </View>
               </>
             )}
           </View>

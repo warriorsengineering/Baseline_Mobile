@@ -8,64 +8,64 @@ const DivisionStandings = () => {
   const tableHead = ['#', 'Team', 'W', 'L', 'PCT', 'GB', 'Conf', 'Div', 'Home', 'Away', 'L10', 'STRK']; // Adjusted headers
   const DivisionData = [
     {
-    division: 'Pacific Division',
-    teams: [
-      ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-     ]
+      division: 'Pacific Division',
+      teams: [
+        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+      ]
     },
     {
-    division: 'Northwest Division',
-    teams: [
-      ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-     ]
+      division: 'Northwest Division',
+      teams: [
+        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+      ]
     },
     {
-    division: 'Southwest Division',
-    teams: [
-      ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ]
-   },
-   {
-    division: 'Atlantic Division',
-    teams: [
-      ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ]
-   },
-   {
-  division: 'Central Division',
-  teams: [
-      ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-  ]
-},
-{
-  division: 'Southeast Division',
-  teams: [
-      ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-        ]
+      division: 'Southwest Division',
+      teams: [
+        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+      ]
+    },
+    {
+      division: 'Atlantic Division',
+      teams: [
+        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+      ]
+    },
+    {
+      division: 'Central Division',
+      teams: [
+        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+      ]
+    },
+    {
+      division: 'Southeast Division',
+      teams: [
+        ['1', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View style={{ flexDirection: 'row', alignItems: 'center' }}><Image source={require('../assets/images/nuggets-logo.png')} style={{ width: 40, height: 40 }} /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+      ]
     },
   ];
 
@@ -78,66 +78,66 @@ const DivisionStandings = () => {
     backgroundColor: '#F0F0F0',
   };
 
-return (
-<View>
-  {DivisionData.map((divData) => (
-  <View key={divData.division}>
-    <Text className='font-bold mb-5 mt-5 text-left text-xl'>{divData.division}</Text>
-  <View style={{ flexDirection: 'row' }}>
-  {/* Static Columns (# and Team) */}
-  <Table borderStyle={{ borderColor: 'transparent' }}>
-      <Row 
-        data={tableHead.slice(0, 2)} 
-        style={{ height: 40 }}  // Add top border here
-        textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
-        widthArr={[10, 80]}
-        cellStyle={headerCellStyle}
-      />
-  <TableWrapper style={styles.tableWrapper}>
-  {divData.teams.map((teamData, index) => (
-      <Row
-        key={index}
-        data={teamData.slice(0, 2)}
-        style={[
-        index % 2 && { backgroundColor: 'transparent' },
-          { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd' },
-          ]}
-        widthArr={[30, 230]}
-        cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 2, borderTopColor: '#ddd' } : cellStyle} 
-        textStyle={index === 0 ? { fontWeight: 'bold' } : ''}
-        />
-    ))}
-   </TableWrapper>
-  </Table>
+  return (
+    <View>
+      {DivisionData.map((divData) => (
+        <View key={divData.division}>
+          <Text className='font-bold mb-5 mt-5 text-left text-xl'>{divData.division}</Text>
+          <View style={{ flexDirection: 'row' }}>
+            {/* Static Columns (# and Team) */}
+            <Table borderStyle={{ borderColor: 'transparent' }}>
+              <Row
+                data={tableHead.slice(0, 2)}
+                style={{ height: 40 }}  // Add top border here
+                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
+                widthArr={[10, 80]}
+                cellStyle={headerCellStyle}
+              />
+              <TableWrapper style={styles.tableWrapper}>
+                {divData.teams.map((teamData, index) => (
+                  <Row
+                    key={index}
+                    data={teamData.slice(0, 2)}
+                    style={[
+                      index % 2 && { backgroundColor: 'transparent' },
+                      { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd' },
+                    ]}
+                    widthArr={[30, 230]}
+                    cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 2, borderTopColor: '#ddd' } : cellStyle}
+                    textStyle={index === 0 ? { fontWeight: 'bold' } : ''}
+                  />
+                ))}
+              </TableWrapper>
+            </Table>
 
-  {/* Scrollable Columns (W, L, PCT, GB) */}
-  <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-  <Table borderStyle={{ borderColor: 'transparent' }}>
-      <Row
-        data={tableHead.slice(2)}
-        style={{ height: 40 }}
-        textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
-        widthArr={[40, 60, 60, 55, 80, 70, 80, 70, 70, 70]} // Adjust width for W, L, PCT, GB
-        cellStyle={headerCellStyle}
-      />
-  <TableWrapper style={{ width: '100%' }}>
-    {divData.teams.map((teamData, index) => (
-      <Row
-        key={index}
-        data={teamData.slice(2)}
-        style={[ index % 2 && { backgroundColor: 'transparent' }, { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd', paddingLeft: 5 }]}
-        textStyle={{ textAlign: 'center', paddingLeft: 10 }}
-        widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
-        cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 1, borderTopColor: '#ddd' } : cellStyle}
-      />
+            {/* Scrollable Columns (W, L, PCT, GB) */}
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+              <Table borderStyle={{ borderColor: 'transparent' }}>
+                <Row
+                  data={tableHead.slice(2)}
+                  style={{ height: 40 }}
+                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
+                  widthArr={[40, 60, 60, 55, 80, 70, 80, 70, 70, 70]} // Adjust width for W, L, PCT, GB
+                  cellStyle={headerCellStyle}
+                />
+                <TableWrapper style={{ width: '100%' }}>
+                  {divData.teams.map((teamData, index) => (
+                    <Row
+                      key={index}
+                      data={teamData.slice(2)}
+                      style={[index % 2 && { backgroundColor: 'transparent' }, { height: 50, borderBottomWidth: 1, borderBottomColor: '#ddd', paddingLeft: 5 }]}
+                      textStyle={{ textAlign: 'center', paddingLeft: 10 }}
+                      widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
+                      cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 1, borderTopColor: '#ddd' } : cellStyle}
+                    />
+                  ))}
+                </TableWrapper>
+              </Table>
+            </ScrollView>
+          </View>
+        </View>
       ))}
-  </TableWrapper>
-  </Table>
-  </ScrollView>
-  </View> 
-</View> 
-  ))}
-</View>
+    </View>
   );
 };
 

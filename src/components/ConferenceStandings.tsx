@@ -8,46 +8,46 @@ const ConferenceStandings = () => {
   const tableHead = ['#', 'Team', 'W', 'L', 'PCT', 'GB', 'Conf', 'Div', 'Home', 'Away', 'L10', 'STRK'];
   const ConferenceData = [
     {
-    conference: 'Western Conference', 
-    teams: [
-      ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['6', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['7', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['8', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['9', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['10', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['11', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['12', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['13', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['14', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-      ['15', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10'/><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ]
-  },
-  {
-  conference: 'Eastern Conference', 
-  teams: [
-    ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['6', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['7', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['8', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['9', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['10', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['11', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['12', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['13', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['14', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-    ['15', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
-  ]
-},
-];
+      conference: 'Western Conference',
+      teams: [
+        ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['6', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['7', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['8', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['9', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['10', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['11', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['12', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['13', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['14', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['15', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+      ]
+    },
+    {
+      conference: 'Eastern Conference',
+      teams: [
+        ['1', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', ' - ', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['2', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['3', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['4', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['5', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['6', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['7', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['8', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['9', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['10', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['11', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['12', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['13', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['14', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+        ['15', <View className='flex flex-row items-center'><Image source={require('../assets/images/warriors-logo.png')} className='w-10 h-10' /><Text className='ml-3 font-primary'>Nuggets</Text></View>, 65, 25, '0.696', '2.0', '36-13', '12-4', '33-8', '26-15', '6-4', 'L 1'],
+      ]
+    },
+  ];
 
   const cellStyle = {
     padding: 10,
@@ -58,77 +58,77 @@ const ConferenceStandings = () => {
     backgroundColor: '#F0F0F0',
   };
   return (
-  <View>
-  {ConferenceData.map((confData) => (
-    <View key={confData.conference}>
-        <Text className='font-bold mb-5 mt-5 text-left text-xl'>{confData.conference}</Text>
-      <View className='flex flex-row'>
-        {/* Static Columns (# and Team) */}
-        <Table>
-          <Row
-            data={tableHead.slice(0, 2)}
-            style={{ height: 40 }}
-            textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
-            widthArr={[10, 80]} // Widths for # and Team columns
-            // cellStyle={headerCellStyle}
-          />
-          <TableWrapper style={styles.tableWrapper}>
-            {confData.teams.map((teamData, index) => (
+    <View>
+      {ConferenceData.map((confData) => (
+        <View key={confData.conference}>
+          <Text className='font-bold mb-5 mt-5 text-left text-xl'>{confData.conference}</Text>
+          <View className='flex flex-row'>
+            {/* Static Columns (# and Team) */}
+            <Table>
               <Row
-                key={index}
-                data={teamData.slice(0, 2)}
-                style={[
-                  index % 2 && { backgroundColor: 'transparent' },
-                  {
-                    height: 50,
-                    borderBottomWidth: 1,
-                    borderBottomColor: index === 9 ? '#000' : '#ddd',
-                    borderTopColor: '#ddd',
-                  },
-                ]}
-                widthArr={[30, 230]} // Widths for # and Team columns
-                cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 2, borderTopColor: '#ddd' } : cellStyle}
-                textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
+                data={tableHead.slice(0, 2)}
+                style={{ height: 40 }}
+                textStyle={{ textAlign: 'center', fontWeight: 'bold' }}
+                widthArr={[10, 80]} // Widths for # and Team columns
+              // cellStyle={headerCellStyle}
               />
-            ))}
-          </TableWrapper>
-        </Table>
-        {/* Scrollable Columns (W, L, PCT, GB) */}
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          <Table>
-            <Row
-              data={tableHead.slice(2)}
-              style={{ height: 40 }}
-              textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
-              widthArr={[40, 60, 60, 55, 80, 70, 80, 70, 70, 70]} // Adjust width for W, L, PCT, GB
-              cellStyle={headerCellStyle}
-            />
-            <TableWrapper style={{ width: '100%' }}>
-              {confData.teams.map((teamData, index) => (
+              <TableWrapper style={styles.tableWrapper}>
+                {confData.teams.map((teamData, index) => (
+                  <Row
+                    key={index}
+                    data={teamData.slice(0, 2)}
+                    style={[
+                      index % 2 && { backgroundColor: 'transparent' },
+                      {
+                        height: 50,
+                        borderBottomWidth: 1,
+                        borderBottomColor: index === 9 ? '#000' : '#ddd',
+                        borderTopColor: '#ddd',
+                      },
+                    ]}
+                    widthArr={[30, 230]} // Widths for # and Team columns
+                    cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 2, borderTopColor: '#ddd' } : cellStyle}
+                    textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
+                  />
+                ))}
+              </TableWrapper>
+            </Table>
+            {/* Scrollable Columns (W, L, PCT, GB) */}
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+              <Table>
                 <Row
-                  key={index}
-                  data={teamData.slice(2)}
-                  style={[
-                    index % 2 && { backgroundColor: 'transparent' },
-                    {
-                      height: 50,
-                      borderBottomWidth: 1,
-                      borderBottomColor: index === 9 ? '#000' : '#ddd',
-                      paddingLeft: 5,
-                    },
-                  ]}
-                  textStyle={{ textAlign: 'center', paddingLeft: 10 }}
-                  widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
-                  cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 1, borderTopColor: '#ddd' } : cellStyle}
+                  data={tableHead.slice(2)}
+                  style={{ height: 40 }}
+                  textStyle={{ fontWeight: 'bold', textAlign: 'center', paddingLeft: 5 }}
+                  widthArr={[40, 60, 60, 55, 80, 70, 80, 70, 70, 70]} // Adjust width for W, L, PCT, GB
+                  cellStyle={headerCellStyle}
                 />
-              ))}
-            </TableWrapper>
-          </Table>
-        </ScrollView>
-      </View>
-    </View>
+                <TableWrapper style={{ width: '100%' }}>
+                  {confData.teams.map((teamData, index) => (
+                    <Row
+                      key={index}
+                      data={teamData.slice(2)}
+                      style={[
+                        index % 2 && { backgroundColor: 'transparent' },
+                        {
+                          height: 50,
+                          borderBottomWidth: 1,
+                          borderBottomColor: index === 9 ? '#000' : '#ddd',
+                          paddingLeft: 5,
+                        },
+                      ]}
+                      textStyle={{ textAlign: 'center', paddingLeft: 10 }}
+                      widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
+                      cellStyle={index === 0 ? { ...cellStyle, borderTopWidth: 1, borderTopColor: '#ddd' } : cellStyle}
+                    />
+                  ))}
+                </TableWrapper>
+              </Table>
+            </ScrollView>
+          </View>
+        </View>
       ))}
-  </View>
+    </View>
   );
 };
 
