@@ -55,19 +55,12 @@ const WConferenceStandings = () => {
               />
               <TableWrapper style={styles.tableWrapper}>
                 {confData.teams.map((teamData, index) => (
-                  <Row
+                  <StyledRow
                     key={index}
                     data={teamData.slice(0, 2)}
-                    style={[
-                      index % 2 ? { backgroundColor: 'transparent' } : undefined,
-                      {
-                        height: 50,
-                        borderBottomWidth: 1,
-                        borderBottomColor: '#ddd',
-                      },
-                    ]}
+                    className={`h-[50px] border-b border-gray-300 ${index % 2 ? '' : 'bg-transparent'}`}
                     widthArr={[30, 230]} // Widths for # and Team columns
-                    textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
+                    textClassName={index === 0 ? 'font-bold' : ''}
                   />
                 ))}
               </TableWrapper>
@@ -83,19 +76,12 @@ const WConferenceStandings = () => {
                 />
                 <TableWrapper style={{ width: '100%' }}>
                   {confData.teams.map((teamData, index) => (
-                    <Row
+                    <StyledRow
                       key={index}
                       data={teamData.slice(2)}
-                      style={[
-                        index % 2 ? { backgroundColor: 'transparent' } : undefined,
-                        {
-                          height: 50,
-                          borderBottomWidth: 1,
-                          borderBottomColor: '#ddd',
-                        },
-                      ]}
+                      className={`h-[50px] border-b border-gray-300 ${index % 2 ? '' : 'bg-transparent'}`}
                       widthArr={[50, 50, 60, 55, 80, 73, 70]}  // Match widths with header
-                      textStyle={{ textAlign: 'center', paddingLeft: 5 }}
+                      textClassName='text-center pl-[5px]'
                     />
                   ))}
                 </TableWrapper>

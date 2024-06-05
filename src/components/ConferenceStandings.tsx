@@ -71,20 +71,12 @@ const ConferenceStandings = () => {
               />
               <TableWrapper style={styles.tableWrapper}>
                 {confData.teams.map((teamData, index) => (
-                  <Row
+                  <StyledRow
                     key={index}
                     data={teamData.slice(0, 2)}
-                    style={StyleSheet.flatten([
-                      index % 2 ? { backgroundColor: 'transparent' } : undefined,
-                      {
-                        height: 50,
-                        borderBottomWidth: 1,
-                        borderBottomColor: index === 9 ? '#000' : '#ddd',
-                        borderTopColor: '#ddd',
-                      },
-                    ])}
+                    className={`h-[50px] border-b ${index % 2 ? '' : 'bg-transparent'} ${index === 9 ? 'border-primary' : 'border-gray-300'}`}
                     widthArr={[30, 230]} // Widths for # and Team columns
-                    textStyle={index === 0 ? { fontWeight: 'bold' } : {}}
+                    textClassName={index === 0 ? 'font-bold' : ''}
                   />
                 ))}
               </TableWrapper>
@@ -100,20 +92,12 @@ const ConferenceStandings = () => {
                 />
                 <TableWrapper style={{ width: '100%' }}>
                   {confData.teams.map((teamData, index) => (
-                    <Row
+                    <StyledRow
                       key={index}
                       data={teamData.slice(2)}
-                      style={StyleSheet.flatten([
-                        index % 2 ? { backgroundColor: 'transparent' } : undefined,
-                        {
-                          height: 50,
-                          borderBottomWidth: 1,
-                          borderBottomColor: index === 9 ? '#000' : '#ddd',
-                          paddingLeft: 5,
-                        },
-                      ])}
+                      className={`h-[50px] border-b pl-[5px] ${index % 2 ? '' : 'bg-transparent'} ${index === 9 ? 'border-black' : 'border-gray-300'}`}
                       widthArr={[30, 70, 50, 55, 80, 73, 70, 80, 70, 70]}  // Match widths with header
-                      textStyle={{ textAlign: 'center', paddingLeft: 10 }}
+                      textClassName='text-center pl-[10px]'
                     />
                   ))}
                 </TableWrapper>
