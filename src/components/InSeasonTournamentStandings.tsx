@@ -1,13 +1,17 @@
 // In-Season Tournament Standings Compoenent
 
 import React from 'react';
-import { View, Image, Text, ScrollView, StyleSheet } from 'react-native';
+import { View, Image, Text, ScrollView } from 'react-native';
 import { Table, TableWrapper, Row } from 'react-native-table-component';
 import { remapProps } from 'nativewind';
 
 const StyledRow = remapProps(Row, {
   className: 'style',
   textClassName: 'textStyle',
+});
+
+const StyledTableWrapper = remapProps(TableWrapper, {
+  className: 'style',
 });
 
 const InSeasonTournamentStandings = () => {
@@ -92,7 +96,16 @@ const InSeasonTournamentStandings = () => {
                 widthArr={[10, 80]}
                 textClassName='text-center font-bold'
               />
-              <TableWrapper style={styles.tableWrapper}>
+              <StyledTableWrapper
+                className='w-[200px] bg-gray-100'
+                style={{
+                  shadowColor: '#000',
+                  shadowOffset: { width: 5, height: 0 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 4.84,
+                  elevation: 5, // for Android
+                }}
+              >
                 {groupData.teams.map((teamData, index) => (
                   <StyledRow
                     key={index}
@@ -102,7 +115,7 @@ const InSeasonTournamentStandings = () => {
                     textClassName={index === 0 ? 'font-bold' : ''}
                   />
                 ))}
-              </TableWrapper>
+              </StyledTableWrapper>
             </Table>
 
             {/* Scrollable Columns (W, L, PCT, GB) */}
@@ -111,25 +124,26 @@ const InSeasonTournamentStandings = () => {
                 <StyledRow
                   data={tableHead.slice(2)}
                   className='h-[40px]'
-                  widthArr={[40, 60, 45, 70]}
-                  textClassName='text-center font-bold pl-[10px]'
+                  widthArr={[40, 60, 60, 55]}
+                  textClassName='text-center font-bold pl-[5px]'
                 />
-                <TableWrapper style={{ width: '100%' }}>
+                <StyledTableWrapper className='w-full'>
                   {groupData.teams.map((teamData, index) => (
                     <StyledRow
                       key={index}
                       data={teamData.slice(2)}
-                      className={`h-[50px] border-b border-gray-300 pl-[15px] ${index % 2 ? '' : 'bg-transparent'}`}
-                      widthArr={[50, 50, 60, 70]}
+                      className={`h-[50px] border-b pl-[5px] border-gray-300 ${index % 2 ? '' : 'bg-transparent'}`}
+                      widthArr={[30, 70, 50, 55]}
+                      textClassName='text-center pl-[10px]'
                     />
                   ))}
-                </TableWrapper>
+                </StyledTableWrapper>
               </Table>
             </ScrollView>
           </View>
         </View>
       ))}
-      {/* Repeat the same structure for EasterngroupData */}
+      {/* Repeat structure for East */}
       {EastGroupData.map((groupData) => (
         <View key={groupData.group}>
           <Text className='font-bold mb-5 mt-5 text-left text-xl'>{groupData.group}</Text>
@@ -143,7 +157,16 @@ const InSeasonTournamentStandings = () => {
                 widthArr={[10, 80]}
                 textClassName='text-center font-bold'
               />
-              <TableWrapper style={styles.tableWrapper}>
+              <StyledTableWrapper
+                className='w-[200px] bg-gray-100'
+                style={{
+                  shadowColor: '#000',
+                  shadowOffset: { width: 5, height: 0 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 4.84,
+                  elevation: 5, // for Android
+                }}
+              >
                 {groupData.teams.map((teamData, index) => (
                   <StyledRow
                     key={index}
@@ -153,28 +176,29 @@ const InSeasonTournamentStandings = () => {
                     textClassName={index === 0 ? 'font-bold' : ''}
                   />
                 ))}
-              </TableWrapper>
+              </StyledTableWrapper>
             </Table>
 
-            {/* Scrollable Columns (W, L, PCT, GB) */}
+            {/* Scrollable Columns (W, L, PCT, GB, etc.) */}
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <Table borderStyle={{ borderColor: 'transparent' }}>
                 <StyledRow
                   data={tableHead.slice(2)}
                   className='h-[40px]'
-                  widthArr={[40, 60, 45, 70]}
-                  textClassName='text-center font-bold'
+                  widthArr={[40, 60, 60, 55]}
+                  textClassName='text-center font-bold pl-[5px]'
                 />
-                <TableWrapper style={{ width: '100%' }}>
+                <StyledTableWrapper className='w-full'>
                   {groupData.teams.map((teamData, index) => (
                     <StyledRow
                       key={index}
                       data={teamData.slice(2)}
-                      className={`h-[50px] border-b border-gray-300 pl-[15px] ${index % 2 ? '' : 'bg-transparent'}`}
-                      widthArr={[50, 50, 60, 70]}
+                      className={`h-[50px] border-b pl-[5px] border-gray-300 ${index % 2 ? '' : 'bg-transparent'}`}
+                      widthArr={[30, 70, 50, 55]}
+                      textClassName='text-center pl-[10px]'
                     />
                   ))}
-                </TableWrapper>
+                </StyledTableWrapper>
               </Table>
             </ScrollView>
           </View>
@@ -183,21 +207,5 @@ const InSeasonTournamentStandings = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  tableContainer: {
-    flex: 1,
-    paddingHorizontal: 16,
-  },
-  tableWrapper: {
-    width: 200,
-    backgroundColor: '#F5F5F5',
-    shadowColor: '#000000',
-    shadowOffset: { width: 5, height: 0 }, // Right side shadow
-    shadowOpacity: 0.1,
-    shadowRadius: 4.84,
-    elevation: 5, // for Android
-  }
-});
 
 export default InSeasonTournamentStandings;

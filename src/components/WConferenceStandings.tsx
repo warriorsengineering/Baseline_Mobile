@@ -1,7 +1,7 @@
 // WNBA Conference Standings Compoenent
 
 import React from 'react';
-import { View, Image, Text, ScrollView, StyleSheet } from 'react-native';
+import { View, Image, Text, ScrollView } from 'react-native';
 import { Table, TableWrapper, Row } from 'react-native-table-component';
 import { remapProps } from 'nativewind';
 
@@ -10,8 +10,12 @@ const StyledRow = remapProps(Row, {
   textClassName: 'textStyle',
 });
 
+const StyledTableWrapper = remapProps(TableWrapper, {
+  className: 'style',
+});
+
 const WConferenceStandings = () => {
-  const tableHead = ['#', 'Team', 'W', 'L', 'PCT', 'GB', 'Conf', 'Div', 'Home', 'Away', 'L10', 'STRK']; // Adjusted headers
+  const tableHead = ['#', 'Team', 'W', 'L', 'PCT', 'GB', 'Conf', 'Div', 'Home', 'Away', 'L10', 'STRK'];
   const ConferenceData = [
     {
       conference: 'Western Conference',
@@ -50,41 +54,50 @@ const WConferenceStandings = () => {
               <StyledRow
                 data={tableHead.slice(0, 2)}
                 className='h-[40px]'
-                widthArr={[10, 80]} // Widths for # and Team columns
+                widthArr={[10, 80]}
                 textClassName='text-center font-bold'
               />
-              <TableWrapper style={styles.tableWrapper}>
+              <StyledTableWrapper
+                className='w-[200px] bg-gray-100'
+                style={{
+                  shadowColor: '#000',
+                  shadowOffset: { width: 5, height: 0 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 4.84,
+                  elevation: 5, // for Android
+                }}
+              >
                 {confData.teams.map((teamData, index) => (
                   <StyledRow
                     key={index}
                     data={teamData.slice(0, 2)}
                     className={`h-[50px] border-b border-gray-300 ${index % 2 ? '' : 'bg-transparent'}`}
-                    widthArr={[30, 230]} // Widths for # and Team columns
+                    widthArr={[30, 230]}
                     textClassName={index === 0 ? 'font-bold' : ''}
                   />
                 ))}
-              </TableWrapper>
+              </StyledTableWrapper>
             </Table>
-            {/* Scrollable Columns (W, L, PCT, GB) */}
+            {/* Scrollable Columns (W, L, PCT, GB, etc.) */}
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <Table borderStyle={{ borderColor: 'transparent' }}>
                 <StyledRow
                   data={tableHead.slice(2)}
                   className='h-[40px]'
-                  widthArr={[50, 60, 50, 50, 80, 70, 80]} // Adjust width for W, L, PCT, GB
-                  textClassName='text-center font-bold'
+                  widthArr={[40, 60, 60, 55, 80, 70, 80]}
+                  textClassName='text-center font-bold pl-[5px]'
                 />
-                <TableWrapper style={{ width: '100%' }}>
+                <StyledTableWrapper className='w-full'>
                   {confData.teams.map((teamData, index) => (
                     <StyledRow
                       key={index}
                       data={teamData.slice(2)}
-                      className={`h-[50px] border-b border-gray-300 ${index % 2 ? '' : 'bg-transparent'}`}
-                      widthArr={[50, 50, 60, 55, 80, 73, 70]}  // Match widths with header
-                      textClassName='text-center pl-[5px]'
+                      className={`h-[50px] border-b pl-[5px] border-gray-300 ${index % 2 ? '' : 'bg-transparent'}`}
+                      widthArr={[30, 70, 50, 55, 80, 73, 70]}
+                      textClassName='text-center pl-[10px]'
                     />
                   ))}
-                </TableWrapper>
+                </StyledTableWrapper>
               </Table>
             </ScrollView>
           </View>
@@ -93,21 +106,5 @@ const WConferenceStandings = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  tableContainer: {
-    flex: 1,
-    paddingHorizontal: 16,
-  },
-  tableWrapper: {
-    width: 200,
-    backgroundColor: '#F5F5F5',
-    shadowColor: '#000000',
-    shadowOffset: { width: 5, height: 0 }, // Right side shadow
-    shadowOpacity: 0.1,
-    shadowRadius: 4.84,
-    elevation: 5, // for Android
-  }
-});
 
 export default WConferenceStandings;
