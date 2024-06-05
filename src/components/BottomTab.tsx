@@ -39,7 +39,7 @@ const BottomTab = () => {
           title: 'Home',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? homeActiveIcon : homeDefaultIcon} style={{ width: 22, height: 24 }} />
+              <Image source={focused ? homeActiveIcon : homeDefaultIcon} className='w-[22px] h-[24px]' />
             </View>
           ),
         }}
@@ -52,7 +52,7 @@ const BottomTab = () => {
           title: 'Team',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? teamActiveIcon : teamDefaultIcon} style={focused ? { width: 28, height: 28 } : { width: 24, height: 24 }} />
+              <Image source={focused ? teamActiveIcon : teamDefaultIcon} className={`${focused ? 'w-[28px] h-[28px]' : 'w-[24px] h-[24px]'}`} />
             </View>
           ),
         }}
@@ -65,7 +65,7 @@ const BottomTab = () => {
           title: 'My Tickets',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? ticketsActiveIcon : ticketsDefaultIcon} style={{ width: 32, height: 20 }} />
+              <Image source={focused ? ticketsActiveIcon : ticketsDefaultIcon} className='w-[32px] h-[20px]' />
             </View>
           ),
         }}
@@ -78,7 +78,7 @@ const BottomTab = () => {
           title: 'Events',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? eventsActiveIcon : eventsDefaultIcon} style={{ width: 26, height: 24 }} />
+              <Image source={focused ? eventsActiveIcon : eventsDefaultIcon} className='w-[26px] h-[24px]' />
             </View>
           ),
         }}
@@ -91,7 +91,7 @@ const BottomTab = () => {
           title: 'Arena',
           tabBarIcon: ({ focused }) => (
             <View className={`px-10 pt-2.5 ${focused ? 'border-t-2 border-primary' : ''}`}>
-              <Image source={focused ? arenaActiveIcon : arenaDefaultIcon} style={{ width: 24, height: 24 }} />
+              <Image source={focused ? arenaActiveIcon : arenaDefaultIcon} className='w-[24px] h-[24px]' />
             </View>
           ),
         }}
