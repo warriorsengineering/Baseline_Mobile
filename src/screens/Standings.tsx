@@ -27,50 +27,55 @@ const Standings = () => {
   const backgroundStyle = 'bg-[#F5F5F5] dark:bg-black';
   const [selectedTab, setSelectedTab] = useState('Warriors');
   const [activeTableTab, setActiveTableTab] = useState(0);
+
   return (
     <SafeAreaView className={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <ScrollView
         contentInsetAdjustmentBehavior='automatic'
         className={backgroundStyle}>
-        <View className='flex-1 px-4'>
-          {/* Tab  Switcher */}
-          <View className='mt-5'>
-            <TabSwitcher
-              selectedTab={selectedTab}
-              setSelectedTab={setSelectedTab}
-              tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'Valkyries', href: '#', current: false }]} />
+        <View className='flex-1'>
+          <View className='px-4'>
+            {/* Tab Switcher */}
+            <View className='mt-5'>
+              <TabSwitcher
+                selectedTab={selectedTab}
+                setSelectedTab={setSelectedTab}
+                tabData={[{ name: 'Warriors', href: '#', current: true }, { name: 'Valkyries', href: '#', current: false }]} />
+            </View>
           </View>
           {/* Standings */}
-          <View className='mt-3' key={selectedTab}>
+          <View key={selectedTab}>
             {selectedTab === 'Warriors' && (
               <>
-                {/* Partner Presentation*/}
-                <View className='mt-5'>
+                {/* Partner Presentation */}
+                <View className='px-4 mt-5'>
                   <PartnerPresentation
                     partnerLogo={require('../assets/images/adobe.png')}
                   />
                 </View>
                 {/* Table Tabs and Standings */}
                 <View className='mt-5'>
-                  <FlatList
-                    horizontal
-                    data={NBA}
-                    className={'bg-white flex-1'}
-                    renderItem={({ item, index }) => (
-                      <TouchableOpacity
-                        onPress={() => setActiveTableTab(index)}
-                        className={`p-2.5 mr-2.5 ${activeTableTab === index ? 'font-bold border-b border-black' : ''
-                          }`}
-                      >
-                        <Text className={`${activeTableTab === index ? 'font-semibold' : 'text-muted'}`}>{item.label}</Text>
-                      </TouchableOpacity>
-                    )}
-                    keyExtractor={(item) => item.key}
-                    showsHorizontalScrollIndicator={false}
-                  />
+                  <View className='w-full'>
+                    <FlatList
+                      horizontal
+                      data={NBA}
+                      className='bg-secondary'
+                      renderItem={({ item, index }) => (
+                        <TouchableOpacity
+                          onPress={() => setActiveTableTab(index)}
+                          className={`p-3 mr-3 ${activeTableTab === index ? 'ml-4 border-b border-primary' : ''
+                            }`}
+                        >
+                          <Text className={`${activeTableTab === index ? 'font-semibold' : 'text-muted'}`}>{item.label}</Text>
+                        </TouchableOpacity>
+                      )}
+                      keyExtractor={(item) => item.key}
+                      showsHorizontalScrollIndicator={false}
+                    />
+                  </View>
                   {/* Conditionally Render Standings Table */}
-                  <View className="mt-5">
+                  <View className='px-4 mt-5'>
                     {activeTableTab === 0 ? (
                       <ConferenceStandings />
                     ) : activeTableTab === 1 ? (
@@ -84,32 +89,34 @@ const Standings = () => {
             )}
             {selectedTab === 'Valkyries' && (
               <>
-                {/* Partner Presentation*/}
-                <View className='mt-5'>
+                {/* Partner Presentation */}
+                <View className='px-4 mt-5'>
                   <PartnerPresentation
                     partnerLogo={require('../assets/images/kaiser.png')}
                   />
                 </View>
                 {/* Table Tabs and Standings */}
-                <View className="mt-5">
-                  <FlatList
-                    horizontal
-                    data={WNBA}
-                    className={'bg-white'}
-                    renderItem={({ item, index }) => (
-                      <TouchableOpacity
-                        onPress={() => setActiveTableTab(index)}
-                        className={`p-2.5 mr-2.5 ${activeTableTab === index ? 'font-semibold border-b border-black' : ''
-                          }`}
-                      >
-                        <Text className={`${activeTableTab === index ? 'font-bold' : 'text-muted'}`}>{item.label}</Text>
-                      </TouchableOpacity>
-                    )}
-                    keyExtractor={(item) => item.key}
-                    showsHorizontalScrollIndicator={false}
-                  />
+                <View className='mt-5'>
+                  <View className='w-full'>
+                    <FlatList
+                      horizontal
+                      data={WNBA}
+                      className='bg-secondary'
+                      renderItem={({ item, index }) => (
+                        <TouchableOpacity
+                          onPress={() => setActiveTableTab(index)}
+                          className={`p-3 mr-3 ${activeTableTab === index ? 'ml-4 border-b border-primary' : ''
+                            }`}
+                        >
+                          <Text className={`${activeTableTab === index ? 'font-semibold' : 'text-muted'}`}>{item.label}</Text>
+                        </TouchableOpacity>
+                      )}
+                      keyExtractor={(item) => item.key}
+                      showsHorizontalScrollIndicator={false}
+                    />
+                  </View>
                   {/* Conditionally Render Standings Table */}
-                  <View className="mt-5">
+                  <View className='px-4 mt-5'>
                     <WConferenceStandings />
                   </View>
                 </View>
