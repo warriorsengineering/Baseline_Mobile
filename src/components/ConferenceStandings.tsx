@@ -5,6 +5,7 @@ import { View, Image, Text, ScrollView } from 'react-native';
 import { Table, TableWrapper, Row } from 'react-native-table-component';
 import { remapProps } from 'nativewind';
 
+// Remap props to allow for Tailwind classes
 const StyledRow = remapProps(Row, {
   className: 'style',
   textClassName: 'textStyle',
