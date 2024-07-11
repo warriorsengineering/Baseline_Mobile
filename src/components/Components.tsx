@@ -1,6 +1,7 @@
 // All Components
 
 import BottomTab from './BottomTab';
+import Calendar from './Calendar';
 import Card from './Card';
 import ConferenceStandings from './ConferenceStandings';
 import ContentBlock from './ContentBlock';
@@ -21,4 +22,4 @@ import TeamNavigation from './TeamNavigation';
 import Testimonial from './Testimonial';
 import WConferenceStandings from './WConferenceStandings';
 
-export { BottomTab, Card, ConferenceStandings, ContentBlock, DivisionStandings, EventsNavigation, FeaturedEventCard, GameCard, GameCardLive, Hero, IconBlock, InSeasonTournamentStandings, LogoCloud, PartnerPresentation, PlayerCard, TabSwitcher, TeamLeaders, TeamNavigation, Testimonial, WConferenceStandings };
+export { BottomTab, Calendar, Card, ConferenceStandings, ContentBlock, DivisionStandings, EventsNavigation, FeaturedEventCard, GameCard, GameCardLive, Hero, IconBlock, InSeasonTournamentStandings, LogoCloud, PartnerPresentation, PlayerCard, TabSwitcher, TeamLeaders, TeamNavigation, Testimonial, WConferenceStandings };

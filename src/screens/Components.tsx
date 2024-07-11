@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { Card, ContentBlock, FeaturedEventCard, GameCard, GameCardLive, Hero, IconBlock, LogoCloud, PlayerCard, TeamLeaders, Testimonial } from '../components/Components';
+import { Calendar, Card, ContentBlock, FeaturedEventCard, GameCard, GameCardLive, Hero, IconBlock, LogoCloud, PlayerCard, TeamLeaders, Testimonial } from '../components/Components';
 import * as solidIcons from '@fortawesome/free-solid-svg-icons';
 
 const Components = () => {
@@ -185,6 +185,11 @@ const Components = () => {
             <LogoCloud
               title={'Our Presenting Partners'}
               imageSources={[{ source: require('../assets/images/adobe.png'), link: 'https://www.adobe.com', }, { source: require('../assets/images/kaiser.png'), link: 'https://www.kaiserpermanente.org', },]}
+            />
+          </View>
+          {/* Calendar */}
+          <View className='mb-5'>
+            <Calendar
             />
           </View>
         </View>
