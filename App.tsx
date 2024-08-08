@@ -9,15 +9,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { User, onAuthStateChanged } from "firebase/auth";
 import { firebase_auth } from "./src/config/firebase";
 
-import { Auth, Home, Components, Roster } from './src/screens/Screens';
+import { Auth, Home, Components, PlayerDetails } from './src/screens/Screens';
 import { BottomTab } from './src/components/Components';
 
-type RootStackParamList = {
+export type RootStackParamList = {
   BottomTabs: undefined;
   Home: undefined;
   Auth: undefined;
   Components: undefined;
-  Roster: undefined;
+  PlayerDetails: { firstName: string; lastName: string; position: string; jerseyNumber: number };
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -51,6 +51,11 @@ const App = () => {
               name="Components"
               component={Components}
               options={{ title: 'Components', headerShown: true }}
+            />
+            <Stack.Screen
+              name="PlayerDetails"
+              component={PlayerDetails}
+              options={{ title: 'Player Details', headerShown: true }}
             />
           </React.Fragment>
         ) : (
