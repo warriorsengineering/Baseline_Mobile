@@ -40,7 +40,7 @@ const App = () => {
             <Stack.Screen
               name="BottomTabs"
               component={BottomTab}
-              options={{headerShown: false}}
+              options={{ headerShown: false }}
             />
             <Stack.Screen
               name="Home"
@@ -51,11 +51,6 @@ const App = () => {
               name="Components"
               component={Components}
               options={{ title: 'Components', headerShown: true }}
-            />
-            <Stack.Screen
-              name="Roster"
-              component={Roster}
-              options={{ title: 'Roster', headerShown: true }}
             />
           </React.Fragment>
         ) : (
