@@ -1,7 +1,7 @@
 // Events Navigation Component
 
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { FeaturedEvents, UpcomingEvents } from '../screens/Screens';
